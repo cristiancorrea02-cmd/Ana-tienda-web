@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F4F7FB">
+  <title>Adargeyi — Tienda y catálogo de productos</title>
+  <meta name="description"
+    content="Mira los productos y precios de Adargeyi y ven a visitarnos. Abrimos todos los días de 7:00 a. m. a 10:00 p. m.">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" href="/icon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="antialiased text-tinta">
+
+  <header class="sticky top-0 z-50 bg-fondo/90 backdrop-blur-md border-b border-borde">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="font-serif-custom text-2xl font-semibold tracking-wide hover:opacity-80 transition">
+        Adargeyi
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
+        <a href="#catalogo" class="text-tinta hover:text-acento transition">Catálogo</a>
+        <a href="#nosotros" class="text-tinta hover:text-acento transition">Nosotros</a>
+        <a href="#visitanos" class="text-tinta hover:text-acento transition">Visítanos</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <span id="acceso-propietario" class="contents"></span>
+        <a href="#visitanos"
+          class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-acento hover:bg-acento-fuerte rounded-full transition focus-visible:ring-2 focus-visible:ring-acento">
+          Dónde estamos
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-16 md:py-24 px-6 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-acento font-semibold">Tienda y catálogo</span>
+          <h1 class="font-serif-custom text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight mt-3 mb-6">
+            Mira lo que tenemos y ven a visitarnos.
+          </h1>
+          <p class="text-tinta-suave text-lg leading-relaxed mb-8 max-w-lg">
+            Conoce los productos y precios de Adargeyi antes de llegar, y pasa por la tienda a comprar lo que necesitas.
+            Abrimos todos los días de 7:00&nbsp;a.&nbsp;m. a 10:00&nbsp;p.&nbsp;m.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="#catalogo"
+              class="inline-flex items-center justify-center px-8 py-4 bg-acento hover:bg-acento-fuerte text-white rounded-full font-medium transition shadow-sm hover:shadow">
+              Ver productos
+            </a>
+            <a href="#visitanos"
+              class="inline-flex items-center justify-center px-8 py-4 border border-acento text-acento hover:bg-acento hover:text-white rounded-full font-medium transition">
+              Cómo llegar
+            </a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-4/3 bg-hielo rounded-3xl overflow-hidden shadow-sm">
+            <img src="/portada.webp" alt="Zorro ártico blanco sentado sobre la nieve" width="1092" height="819"
+              fetchpriority="high" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogo" class="scroll-mt-20 py-16 px-6 max-w-7xl mx-auto border-t border-borde/60">
+      <div class="mb-8">
+        <h2 class="font-serif-custom text-3xl font-semibold mb-3">Catálogo de Productos</h2>
+        <p class="text-tinta-suave">Explora los productos disponibles actualmente en nuestra tienda física.</p>
+      </div>
+
+      <div id="filtros-categorias" role="group" aria-label="Filtrar por categoría" class="flex flex-wrap gap-2 mb-10">
+      </div>
+
+      <div id="lista-productos" role="status" aria-live="polite" aria-busy="false" class="space-y-14">
+        <p class="text-tinta-suave">Cargando catálogo…</p>
+      </div>
+    </section>
+
+    <section id="visitanos" class="py-16 px-6 bg-hielo/50">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+
+          <div>
+            <span class="text-xs uppercase tracking-widest text-acento font-semibold">Tienda Física</span>
+            <h2 class="font-serif-custom text-3xl font-semibold my-3">Ven a visitarnos</h2>
+            <p class="text-tinta-suave mb-6">
+              Te esperamos en la tienda para que encuentres en persona lo que viste en el catálogo.
+            </p>
+
+            <div class="space-y-4 text-sm">
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-acento mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <div>
+                  <strong class="block text-tinta">Dirección:</strong>
+                  <span class="text-tinta-suave">Manzana A Casa 8 Parte Alta El Edén Sector, Bella Suiza, Cali, Valle
+                    del Cauca</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-acento mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div>
+                  <strong class="block text-tinta">Horario de atención:</strong>
+                  <span class="text-tinta-suave">Todos los días: 7:00 AM — 10:00 PM</span>
+                </div>
+              </div>
+            </div>
+
+
+            <a href="https://maps.app.goo.gl/8UFMnGvAGRTEm46h9" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 mt-8 px-6 py-3 bg-tinta hover:bg-acento-fuerte text-white rounded-full text-sm font-medium transition">
+              <span>Abrir en Google Maps</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="lg:col-span-2 aspect-video sm:aspect-21/9 lg:aspect-auto lg:h-[380px] rounded-3xl overflow-hidden shadow-sm border border-borde">
+            <iframe title="Mapa con la ubicación de la tienda Adargeyi"
+              src="https://www.google.com/maps?q=3.4064474,-76.5774718&z=17&output=embed"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="py-16 px-6 max-w-4xl mx-auto text-center">
+      <h2 class="font-serif-custom text-3xl font-semibold mb-4">Sobre Adargeyi</h2>
+      <p class="text-tinta-suave leading-relaxed text-lg">
+        Adargeyi es una tienda donde encuentras lo de todos los días: mercado, bebidas, mecatos y artículos de aseo y
+        cuidado personal. Esta página es para que veas qué tenemos y cuánto cuesta, y para que sepas cómo llegar.
+      </p>
+    </section>
+  </main>
+
+  <footer class="bg-tinta text-white py-12 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="font-serif-custom text-2xl font-semibold text-white">Adargeyi</div>
+      <p class="text-xs text-slate-300">© 2026 Adargeyi — Catálogo e información de la tienda.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

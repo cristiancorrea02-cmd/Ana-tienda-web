@@ -1,0 +1,13 @@
+#!/bin/sh
+set -eu
+
+if ! command -v gitleaks >/dev/null 2>&1; then
+  echo "Error: instala Gitleaks antes de publicar cambios (https://github.com/gitleaks/gitleaks/releases)." >&2
+  exit 1
+fi
+
+repo_root=$(git rev-parse --show-toplevel)
+if ! gitleaks git --redact "$repo_root"; then
+  echo "Error: Gitleaks encontró posibles secretos; revócalos y rótalos antes de publicar." >&2
+  exit 1
+fi

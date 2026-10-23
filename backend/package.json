@@ -1,0 +1,21 @@
+{
+  "name": "tienda-web-backend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Servidor API, scripts de carga de datos y reglas de seguridad de Firestore.",
+  "scripts": {
+    "start": "node server.js",
+    "procesar": "node scripts/procesar-imagenes.js",
+    "seed:prueba": "node scripts/seed-firestore.js --dry-run",
+    "seed": "node scripts/seed-firestore.js",
+    "verificar-propietario": "node scripts/verificar-propietario.js"
+  },
+  "dependencies": {
+    "firebase": "^12.19.0"
+  },
+  "devDependencies": {
+    "firebase-admin": "^14.5.0",
+    "sharp": "^0.35.5"
+  }
+}

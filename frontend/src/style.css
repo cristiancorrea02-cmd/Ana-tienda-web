@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/*
+  Paleta única (azules y blancos, a juego con el zorro ártico de la portada).
+  Todas las parejas texto/fondo cumplen WCAG 2.1 AA (>= 4.5:1). Ratios medidos:
+
+    tinta        #0F172A sobre fondo 16.6 · sobre blanco 17.9   texto principal
+    tinta-suave  #334155 sobre fondo  9.6 · sobre hielo   8.5   texto secundario
+    acento       #1D4ED8 sobre fondo  6.2 · sobre blanco  6.7 · sobre hielo 5.5   precios, etiquetas, enlaces
+    blanco       sobre acento 6.7 · sobre acento-fuerte 8.7                       texto de botones
+    control      #52667F sobre blanco 5.9 · sobre fondo 5.5 · sobre hielo 4.9     bordes de campos y botones
+    error        #B91C1C sobre blanco 6.5 · sobre fondo 6.0
+    exito        #166534 sobre blanco 7.1 · sobre fondo 6.6
+*/
+@theme {
+  --color-fondo: #F4F7FB;
+  --color-superficie: #FFFFFF;
+  --color-hielo: #E2EAF5;
+  --color-borde: #CBD8EC;            /* SOLO decorativo: separadores y bordes de tarjetas */
+  --color-control: #52667F;          /* bordes de elementos interactivos: campos, filtros, botones de contorno */
+  --color-tinta: #0F172A;
+  --color-tinta-suave: #334155;
+  --color-acento: #1D4ED8;
+  --color-acento-fuerte: #1E40AF;
+  --color-error: #B91C1C;
+  --color-exito: #166534;
+  --font-serif-custom: 'Fraunces', serif;
+}
+
+@layer base {
+  body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-tinta);
+  }
+
+  /* Tailwind pinta el placeholder al 50% de opacidad (3.4:1, no cumple AA). Aquí: #475569 = 7.6:1 sobre blanco. */
+  ::placeholder {
+    color: #475569;
+    opacity: 1;
+  }
+
+  /* Accesibilidad y foco visible para navegación por teclado (WCAG 2.4.7) */
+  :focus-visible {
+    outline: 2px solid var(--color-acento);
+    outline-offset: 2px;
+  }
+}

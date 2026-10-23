@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F4F7FB">
+  <title>Administración — Adargeyi</title>
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen antialiased text-tinta">
+  <header class="border-b border-borde bg-white/90">
+    <div class="max-w-6xl mx-auto px-5 py-5 flex items-center justify-between gap-4">
+      <a href="/" class="font-serif-custom text-2xl font-semibold">Adargeyi</a>
+      <a href="/" class="text-sm font-medium text-acento hover:underline">Volver a la tienda</a>
+    </div>
+  </header>
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+    <section id="login-panel" class="max-w-md mx-auto bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-borde">
+      <p class="text-xs uppercase tracking-widest text-acento font-semibold">Acceso privado</p>
+      <h1 class="font-serif-custom text-3xl font-semibold mt-2">Administrar la tienda</h1>
+      <p class="text-tinta-suave mt-2 mb-6">Inicia sesión con la cuenta autorizada para administrar los productos.</p>
+      <form id="login-form" class="space-y-4">
+        <label class="block text-sm font-semibold text-tinta">Correo electrónico
+          <input id="email" type="email" autocomplete="username" required class="mt-1 w-full rounded-xl border border-control px-4 py-3 outline-none focus:ring-2 focus:ring-acento focus:border-acento transition" placeholder="admin@tutienda.com">
+        </label>
+        <label class="block text-sm font-semibold text-tinta">Contraseña
+          <div class="mt-1 flex rounded-xl border border-control focus-within:ring-2 focus-within:ring-acento focus-within:border-acento overflow-hidden transition">
+            <input id="password" type="password" autocomplete="current-password" required class="min-w-0 flex-1 px-4 py-3 outline-none" placeholder="Tu contraseña">
+            <button id="toggle-password" type="button" class="px-4 text-sm font-semibold text-acento hover:text-acento-fuerte">Mostrar</button>
+          </div>
+        </label>
+        <button id="login-button" type="submit" class="w-full rounded-full bg-acento px-5 py-3 font-semibold text-white hover:bg-acento-fuerte transition disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-acento">Iniciar sesión</button>
+        <p id="login-message" role="status" aria-live="polite" class="text-sm font-medium"></p>
+      </form>
+      <p class="mt-5 text-xs text-tinta-suave">El acceso está reservado para la cuenta administrativa. No hay registro público.</p>
+    </section>
+
+    <section id="admin-panel" class="hidden">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+        <div><p class="text-xs uppercase tracking-widest text-acento font-semibold">Área privada</p><h1 class="font-serif-custom text-3xl sm:text-4xl font-semibold mt-2">Gestión del catálogo</h1><p id="admin-email" class="text-sm text-tinta-suave mt-2 font-medium"></p></div>
+        <button id="logout-button" class="rounded-full border border-control px-5 py-3 font-semibold text-tinta hover:border-acento hover:text-acento transition focus-visible:ring-2 focus-visible:ring-acento">Cerrar sesión</button>
+      </div>
+
+      <div class="grid lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-6 items-start">
+        <section class="bg-white rounded-3xl p-5 sm:p-6 border border-borde shadow-sm">
+          <h2 id="form-title" class="font-serif-custom text-2xl font-semibold">Añadir productos</h2>
+          <p id="form-help" class="text-sm text-tinta-suave mt-1 mb-5">Selecciona una o varias imágenes. Cada imagen creará un producto; puedes ajustar los nombres antes de guardarlos.</p>
+          <form id="product-form" class="space-y-4">
+            <input id="product-id" type="hidden">
+            <label class="block text-sm font-semibold text-tinta">Nombre del producto
+              <input id="product-name" required maxlength="120" class="mt-1 w-full rounded-xl border border-control px-4 py-3 outline-none focus:ring-2 focus:ring-acento focus:border-acento transition" placeholder="Ej. Arroz 1 kg">
+            </label>
+            <label class="block text-sm font-semibold text-tinta">Precio en pesos colombianos
+              <input id="product-price" type="number" min="0" step="50" required class="mt-1 w-full rounded-xl border border-control px-4 py-3 outline-none focus:ring-2 focus:ring-acento focus:border-acento transition" placeholder="Ej. 4500">
+            </label>
+            <label class="block text-sm font-semibold text-tinta">Categoría
+              <input id="product-category" list="category-options" required maxlength="80" class="mt-1 w-full rounded-xl border border-control px-4 py-3 outline-none focus:ring-2 focus:ring-acento focus:border-acento transition" placeholder="Ej. Mercado">
+              <datalist id="category-options"><option value="Bebidas"><option value="Mecatos"><option value="Mercado"><option value="Productos y otros"><option value="Aseo y cuidado personal"></datalist>
+            </label>
+            <label class="block text-sm font-semibold text-tinta">Imagen del producto
+              <input id="product-image" type="file" accept="image/jpeg,image/png,image/webp,image/avif" class="mt-1 block w-full rounded-xl border border-control px-3 py-3 text-sm focus:ring-2 focus:ring-acento focus:border-acento transition" >
+            </label>
+            <p id="image-help" class="text-xs text-tinta-suave">Para crear varios productos, utiliza «Carga por lote» más abajo. Tamaño máximo por imagen: 5 MB.</p>
+            <div id="image-preview-wrap" class="hidden"><img id="image-preview" alt="Vista previa de la imagen" class="max-h-48 rounded-xl border border-borde object-contain"><p id="current-image-label" class="text-xs text-tinta-suave mt-2 font-medium"></p></div>
+            <div class="flex flex-wrap gap-3 pt-2">
+              <button id="save-product-button" type="submit" class="rounded-full bg-acento px-5 py-3 font-semibold text-white hover:bg-acento-fuerte transition focus-visible:ring-2 focus-visible:ring-acento">Guardar producto</button>
+              <button id="cancel-edit-button" type="button" class="hidden rounded-full border border-control px-5 py-3 font-semibold text-tinta hover:border-acento transition focus-visible:ring-2 focus-visible:ring-acento">Cancelar edición</button>
+            </div>
+            <p id="product-message" role="status" aria-live="polite" class="text-sm font-medium"></p>
+          </form>
+          <div class="border-t border-borde mt-7 pt-6">
+            <h3 class="font-serif-custom text-xl font-semibold text-tinta">Carga por lote</h3>
+            <p class="text-sm text-tinta-suave mt-1 mb-3">Añade imágenes o carpetas, revisa y edita el nombre, el precio y la categoría de cada producto, y guárdalos cuando estén listos. Puedes añadir archivos en varias selecciones.</p>
+            <p class="text-xs text-tinta-suave mb-3">Se aceptan JPG, PNG, WebP y AVIF de hasta 5 MB cada una, con un máximo de 100 imágenes preparadas.</p>
+            <form id="bulk-form" novalidate class="space-y-3">
+              <label class="block text-sm font-semibold text-tinta">Seleccionar imágenes
+                <input id="bulk-images" type="file" accept="image/jpeg,image/png,image/webp,image/avif" multiple class="mt-1 block w-full rounded-xl border border-control px-3 py-3 text-sm focus:ring-2 focus:ring-acento focus:border-acento transition">
+              </label>
+              <label class="block text-sm font-semibold text-tinta">Añadir imágenes de una carpeta
+                <input id="bulk-folder" type="file" accept="image/jpeg,image/png,image/webp,image/avif" multiple webkitdirectory directory class="mt-1 block w-full rounded-xl border border-control px-3 py-3 text-sm focus:ring-2 focus:ring-acento focus:border-acento transition">
+              </label>
+              <p id="bulk-count" class="text-sm text-tinta-suave">No hay imágenes preparadas.</p>
+              <div id="bulk-preview" class="space-y-3" aria-live="polite"></div>
+              <button id="bulk-button" type="submit" disabled class="rounded-full border-2 border-acento text-acento px-5 py-3 font-semibold hover:bg-acento hover:text-white transition disabled:cursor-not-allowed disabled:opacity-50 focus-visible:ring-2 focus-visible:ring-acento">Guardar productos preparados</button>
+              <p id="bulk-message" role="status" aria-live="polite" class="text-sm font-medium"></p>
+            </form>
+          </div>
+        </section>
+
+        <section class="bg-white rounded-3xl p-5 sm:p-6 border border-borde shadow-sm">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-5">
+            <div><h2 class="font-serif-custom text-2xl font-semibold text-tinta">Productos actuales</h2><p id="product-count" class="text-sm text-tinta-suave mt-1">Cargando productos…</p></div>
+            <input id="product-search" type="search" placeholder="Buscar producto…" aria-label="Buscar producto" class="w-full sm:w-56 rounded-full border border-control px-4 py-2 outline-none focus:ring-2 focus:ring-acento focus:border-acento transition">
+          </div>
+          <div id="admin-product-list" class="space-y-3"><p class="text-sm text-tinta-suave">Cargando…</p></div>
+        </section>
+      </div>
+      <p id="global-message" role="status" aria-live="polite" class="mt-5 text-sm"></p>
+    </section>
+  </main>
+  <script type="module" src="/src/admin.js"></script>
+</body>
+</html>

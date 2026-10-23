@@ -1,0 +1,27 @@
+{
+  "hosting": {
+    "site": "ana-tienda-1976e",
+    "public": "frontend/dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/quHoZ3ckEc9rLuBMpbcf",
+        "destination": "/quHoZ3ckEc9rLuBMpbcf.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "firestore": {
+    "database": "(default)",
+    "location": "southamerica-east1",
+    "rules": "backend/firestore/firestore.rules",
+    "indexes": "backend/firestore/firestore.indexes.json"
+  }
+}

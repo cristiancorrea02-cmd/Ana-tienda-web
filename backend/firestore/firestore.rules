@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() {
+      return request.auth != null
+        && request.auth.token.email == 'correacristian798@gmail.com'
+        && request.auth.token.email_verified == true;
+    }
+
+    match /productos/{productoId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    // Denegar cualquier otra colección por defecto.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
