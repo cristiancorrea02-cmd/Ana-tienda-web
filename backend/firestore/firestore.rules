@@ -12,6 +12,13 @@ service cloud.firestore {
       allow create, update, delete: if isAdmin();
     }
 
+    // Pedidos de clientes: cualquier usuario puede crear su pedido (desde el carrito),
+    // pero solo el administrador puede leerlos y actualizarlos.
+    match /pedidos/{pedidoId} {
+      allow create: if true;
+      allow read, update, delete: if isAdmin();
+    }
+
     // Denegar cualquier otra colección por defecto.
     match /{document=**} {
       allow read, write: if false;

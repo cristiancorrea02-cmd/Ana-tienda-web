@@ -1,7 +1,7 @@
-import { onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
+import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { collection, deleteDoc, doc, getDocs, setDoc, updateDoc } from 'firebase/firestore';
 import { auth, db } from './firebase/client.js';
-import { ADMIN_EMAIL, esAdministrador, olvidarPropietario, recordarPropietario } from './auth/propietario.js';
+import { esAdministrador, olvidarPropietario, recordarPropietario } from './auth/propietario.js';
 
 const $ = (id) => document.getElementById(id);
 const loginPanel = $('login-panel');
@@ -338,15 +338,33 @@ loginForm.addEventListener('submit', async (event) => {
   const button = $('login-button'); button.disabled = true; button.textContent = 'Verificando…';
   message('login-message', '');
   try {
-    if (!ADMIN_EMAIL) throw new Error('Falta configurar VITE_ADMIN_EMAIL en el archivo .env.');
-    const credential = await signInWithEmailAndPassword(auth, $('email').value.trim(), $('password').value);
-    if (!esAdministrador(credential.user)) {
-      await signOut(auth);
-      throw new Error('Esta cuenta no está autorizada para administrar la tienda.');
+    // SEGURIDAD (recomendación del docente): Las credenciales se envían al backend
+    // propio, que las valida con Firebase Admin SDK. De esta forma la contraseña,
+    // el correo y la API Key NUNCA aparecen en los payloads visibles con F12 → Network,
+    // porque la petición directa a Google (accounts:signInWithPassword) la hace el
+    // servidor, no el navegador.
+    const email = $('email').value.trim();
+    const password = $('password').value;
+
+    const res = await fetch('/api/auth/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token: btoa(email + ':' + password) }),
+    });
+    const resultado = await res.json();
+
+    if (!res.ok) {
+      throw new Error(resultado.error || 'No se pudo iniciar sesión.');
     }
+
+    // Iniciar sesión en Firebase Auth del cliente usando el custom token del backend.
+    const { signInWithCustomToken } = await import('firebase/auth');
+    await signInWithCustomToken(auth, resultado.customToken);
+
+    console.log('[Auth] Sesión iniciada correctamente. Email ofuscado:', resultado.email);
   } catch (error) {
     console.error('Inicio de sesión rechazado:', error);
-    message('login-message', error.message?.startsWith('Falta configurar') || error.message?.startsWith('Esta cuenta') ? error.message : safeError(error), true);
+    message('login-message', error.message?.startsWith('Falta configurar') || error.message?.startsWith('Esta cuenta') || error.message?.startsWith('No se pudo') || error.message?.startsWith('Correo') || error.message?.startsWith('El servicio') || error.message?.startsWith('Token') ? error.message : safeError(error), true);
   } finally { button.disabled = false; button.textContent = 'Iniciar sesión'; }
 });
 $('logout-button').addEventListener('click', async () => {
@@ -543,9 +561,158 @@ onAuthStateChanged(auth, async (user) => {
       message('global-message', safeError(error), true);
       mostrarErrorCargaProductos(error);
     }
+    // Cargar pedidos del panel administrativo.
+    try { await cargarPedidos(); }
+    catch (error) { console.warn('No se pudieron cargar los pedidos:', error.message); }
   } else {
     olvidarPropietario();
     adminPanel.classList.add('hidden'); loginPanel.classList.remove('hidden');
     if (user) { await signOut(auth); message('login-message', 'Esta cuenta no está autorizada para administrar la tienda.', true); }
   }
 });
+
+// ─── GESTIÓN DE PEDIDOS (solicitud del docente) ───────────────────────────────
+// El administrador puede ver los pedidos hechos por los clientes directamente
+// desde el panel administrativo.
+
+async function cargarPedidos() {
+  const contenedorPedidos = $('pedidos-lista');
+  if (!contenedorPedidos) return;
+
+  contenedorPedidos.innerHTML = '<p class="text-sm text-tinta-suave py-4">Cargando pedidos…</p>';
+
+  try {
+    // Intentar obtener pedidos de Firestore directamente.
+    const snapshot = await getDocs(collection(db, 'pedidos'));
+    const pedidos = snapshot.docs.map((docSnap) => ({ id: docSnap.id, ...docSnap.data() }));
+
+    // Ordenar por fecha (más recientes primero).
+    pedidos.sort((a, b) => {
+      const fechaA = a.creadoEn ? new Date(a.creadoEn).getTime() : 0;
+      const fechaB = b.creadoEn ? new Date(b.creadoEn).getTime() : 0;
+      return fechaB - fechaA;
+    });
+
+    renderizarPedidos(pedidos);
+  } catch (error) {
+    console.warn('[Pedidos] Error cargando desde Firestore:', error.message);
+    contenedorPedidos.innerHTML = '<p class="text-sm text-tinta-suave py-4">No hay pedidos registrados aún.</p>';
+  }
+}
+
+function renderizarPedidos(pedidos) {
+  const contenedorPedidos = $('pedidos-lista');
+  if (!contenedorPedidos) return;
+
+  if (!pedidos || pedidos.length === 0) {
+    contenedorPedidos.innerHTML = '<p class="text-sm text-tinta-suave py-4">No hay pedidos registrados aún. Los pedidos aparecerán aquí cuando los clientes compren desde el carrito.</p>';
+    $('pedidos-count').textContent = '0 pedidos';
+    return;
+  }
+
+  $('pedidos-count').textContent = `${pedidos.length} pedido(s)`;
+  contenedorPedidos.replaceChildren();
+
+  const coloresEstado = {
+    pendiente: 'bg-yellow-100 text-yellow-800',
+    en_proceso: 'bg-blue-100 text-blue-800',
+    completado: 'bg-green-100 text-green-800',
+    cancelado: 'bg-red-100 text-red-800',
+  };
+
+  for (const pedido of pedidos) {
+    const card = document.createElement('article');
+    card.className = 'border border-borde rounded-2xl p-4 space-y-3';
+
+    // Encabezado del pedido
+    const header = document.createElement('div');
+    header.className = 'flex flex-wrap items-center justify-between gap-2';
+
+    const idPedido = document.createElement('p');
+    idPedido.className = 'text-sm font-semibold text-tinta';
+    idPedido.textContent = `Pedido #${pedido.id.slice(0, 8).toUpperCase()}`;
+
+    const estadoBadge = document.createElement('span');
+    const estadoTexto = pedido.estado || 'pendiente';
+    estadoBadge.className = `text-xs font-semibold px-3 py-1 rounded-full ${coloresEstado[estadoTexto] || coloresEstado.pendiente}`;
+    estadoBadge.textContent = estadoTexto.replace('_', ' ').replace(/^\w/, (c) => c.toUpperCase());
+    header.append(idPedido, estadoBadge);
+
+    // Fecha
+    const fecha = document.createElement('p');
+    fecha.className = 'text-xs text-tinta-suave';
+    fecha.textContent = pedido.creadoEn
+      ? `Fecha: ${new Date(pedido.creadoEn).toLocaleString('es-CO')}`
+      : 'Fecha no disponible';
+
+    // Cliente (ofuscado por seguridad)
+    const cliente = document.createElement('p');
+    cliente.className = 'text-sm text-tinta-suave';
+    cliente.textContent = pedido.clienteNombre
+      ? `Cliente: ${pedido.clienteNombre}`
+      : 'Cliente anónimo';
+
+    // Productos del pedido
+    const productosDiv = document.createElement('div');
+    productosDiv.className = 'space-y-1';
+    if (pedido.productos && Array.isArray(pedido.productos)) {
+      for (const prod of pedido.productos) {
+        const linea = document.createElement('p');
+        linea.className = 'text-sm text-tinta';
+        linea.textContent = `• ${prod.nombre || 'Producto'} × ${prod.cantidad || 1} — $${Number(prod.precio || 0).toLocaleString('es-CO')}`;
+        productosDiv.append(linea);
+      }
+    }
+
+    // Total
+    const total = document.createElement('p');
+    total.className = 'text-sm font-bold text-acento';
+    const totalValor = pedido.total || (pedido.productos || []).reduce(
+      (sum, p) => sum + (Number(p.precio || 0) * (p.cantidad || 1)), 0
+    );
+    total.textContent = `Total: $${Number(totalValor).toLocaleString('es-CO')}`;
+
+    // Selector de estado
+    const estadoControl = document.createElement('div');
+    estadoControl.className = 'flex items-center gap-2';
+
+    const selectEstado = document.createElement('select');
+    selectEstado.className = 'rounded-xl border border-control px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-acento';
+    for (const [valor, etiqueta] of [['pendiente', 'Pendiente'], ['en_proceso', 'En proceso'], ['completado', 'Completado'], ['cancelado', 'Cancelado']]) {
+      const opt = document.createElement('option');
+      opt.value = valor;
+      opt.textContent = etiqueta;
+      if (valor === estadoTexto) opt.selected = true;
+      selectEstado.append(opt);
+    }
+
+    const btnActualizar = document.createElement('button');
+    btnActualizar.type = 'button';
+    btnActualizar.className = 'rounded-full border border-acento px-3 py-1.5 text-sm text-acento hover:bg-acento hover:text-white transition';
+    btnActualizar.textContent = 'Actualizar';
+    btnActualizar.addEventListener('click', async () => {
+      btnActualizar.disabled = true;
+      btnActualizar.textContent = 'Guardando…';
+      try {
+        await updateDoc(doc(db, 'pedidos', pedido.id), {
+          estado: selectEstado.value,
+          actualizadoEn: new Date().toISOString(),
+        });
+        pedido.estado = selectEstado.value;
+        estadoBadge.className = `text-xs font-semibold px-3 py-1 rounded-full ${coloresEstado[selectEstado.value] || coloresEstado.pendiente}`;
+        estadoBadge.textContent = selectEstado.value.replace('_', ' ').replace(/^\w/, (c) => c.toUpperCase());
+        message('global-message', `Pedido #${pedido.id.slice(0, 8).toUpperCase()} actualizado.`);
+      } catch (error) {
+        console.error('Error al actualizar pedido:', error);
+        message('global-message', 'No se pudo actualizar el pedido.', true);
+      } finally {
+        btnActualizar.disabled = false;
+        btnActualizar.textContent = 'Actualizar';
+      }
+    });
+    estadoControl.append(selectEstado, btnActualizar);
+
+    card.append(header, fecha, cliente, productosDiv, total, estadoControl);
+    contenedorPedidos.append(card);
+  }
+}

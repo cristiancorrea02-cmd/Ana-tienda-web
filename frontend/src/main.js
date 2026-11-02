@@ -3,6 +3,7 @@ import { iniciarBotonAcceso } from './auth/boton-acceso.js';
 
 const filtros = document.getElementById('filtros-categorias');
 const lista = document.getElementById('lista-productos');
+const busqueda = document.getElementById('buscar-productos');
 
 async function cargarCatalogo() {
   lista.setAttribute('aria-busy', 'true');
@@ -15,7 +16,7 @@ async function cargarCatalogo() {
       lista.textContent = 'Aún no hay productos en el catálogo.';
       return;
     }
-    montarCatalogo({ filtros, lista, productos });
+    montarCatalogo({ filtros, lista, busqueda, productos });
   } catch (error) {
     console.error('No se pudo cargar el catálogo:', error);
     const aviso = document.createElement('p');

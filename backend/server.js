@@ -4,11 +4,12 @@ import { atender } from './routes/index.js';
 
 const PORT = process.env.PORT || 3001;
 
-// API pública de solo lectura: se permite consultarla desde cualquier origen.
+// API: se permite consultarla desde cualquier origen.
+// Se aceptan GET (catálogo), POST (autenticación) y PATCH (actualizar pedidos).
 function agregarCors(res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 }
 
 const server = http.createServer(async (req, res) => {

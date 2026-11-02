@@ -5,7 +5,9 @@
 // Firebase Auth + backend/firestore/firestore.rules (que repite este mismo correo).
 
 // Debe coincidir con el correo de backend/firestore/firestore.rules.
-export const ADMIN_EMAIL = String(import.meta.env.VITE_ADMIN_EMAIL || 'correacristian798@gmail.com')
+// SEGURIDAD: Este valor se usa solo para decisiones de UI (mostrar/ocultar botones).
+// La autorización REAL la valida el servidor (Firebase Auth + Firestore Rules + Backend).
+export const ADMIN_EMAIL = String(import.meta.env.VITE_ADMIN_EMAIL || '')
   .trim()
   .toLowerCase();
 
