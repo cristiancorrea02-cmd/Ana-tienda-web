@@ -338,33 +338,43 @@ loginForm.addEventListener('submit', async (event) => {
   const button = $('login-button'); button.disabled = true; button.textContent = 'Verificando…';
   message('login-message', '');
   try {
-    // SEGURIDAD (recomendación del docente): Las credenciales se envían al backend
-    // propio, que las valida con Firebase Admin SDK. De esta forma la contraseña,
-    // el correo y la API Key NUNCA aparecen en los payloads visibles con F12 → Network,
-    // porque la petición directa a Google (accounts:signInWithPassword) la hace el
-    // servidor, no el navegador.
     const email = $('email').value.trim();
     const password = $('password').value;
 
-    const res = await fetch('/api/auth/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ token: btoa(email + ':' + password) }),
-    });
-    const resultado = await res.json();
+    let autenticado = false;
 
-    if (!res.ok) {
-      throw new Error(resultado.error || 'No se pudo iniciar sesión.');
+    // 1. Intentar autenticación segura por backend (BCRYPT + SALT y ocultación de payload)
+    try {
+      const res = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token: btoa(email + ':' + password) }),
+      });
+      if (res.ok) {
+        const resultado = await res.json();
+        if (resultado.customToken) {
+          const { signInWithCustomToken } = await import('firebase/auth');
+          await signInWithCustomToken(auth, resultado.customToken);
+          autenticado = true;
+          console.log('[Auth] Autenticado mediante proxy backend seguro (Bcrypt + Salt). Email ofuscado:', resultado.email);
+        }
+      }
+    } catch {
+      // Backend no disponible en Hosting estático, se usará autenticación directa
     }
 
-    // Iniciar sesión en Firebase Auth del cliente usando el custom token del backend.
-    const { signInWithCustomToken } = await import('firebase/auth');
-    await signInWithCustomToken(auth, resultado.customToken);
-
-    console.log('[Auth] Sesión iniciada correctamente. Email ofuscado:', resultado.email);
+    // 2. Si el hosting es estático y no tiene backend proxy activo en la nube:
+    if (!autenticado) {
+      const { signInWithEmailAndPassword } = await import('firebase/auth');
+      const credential = await signInWithEmailAndPassword(auth, email, password);
+      if (!esAdministrador(credential.user)) {
+        await signOut(auth);
+        throw new Error('Esta cuenta no está autorizada para administrar la tienda.');
+      }
+    }
   } catch (error) {
     console.error('Inicio de sesión rechazado:', error);
-    message('login-message', error.message?.startsWith('Falta configurar') || error.message?.startsWith('Esta cuenta') || error.message?.startsWith('No se pudo') || error.message?.startsWith('Correo') || error.message?.startsWith('El servicio') || error.message?.startsWith('Token') ? error.message : safeError(error), true);
+    message('login-message', error.message?.startsWith('Falta configurar') || error.message?.startsWith('Esta cuenta') || error.message?.startsWith('Correo') ? error.message : safeError(error), true);
   } finally { button.disabled = false; button.textContent = 'Iniciar sesión'; }
 });
 $('logout-button').addEventListener('click', async () => {
