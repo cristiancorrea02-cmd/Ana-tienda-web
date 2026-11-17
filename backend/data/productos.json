@@ -1,0 +1,1020 @@
+[
+  {
+    "id": "bebidas-agua-glacial-con-gas",
+    "nombre": "Agua glacial con gas",
+    "precio": 1800,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/agua-glacial-con-gas.webp"
+  },
+  {
+    "id": "bebidas-agua-glacial-sin-gas",
+    "nombre": "Agua glacial sin gas",
+    "precio": 1800,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/agua-glacial-sin-gas.webp"
+  },
+  {
+    "id": "bebidas-big-cola",
+    "nombre": "Big-cola",
+    "precio": 4500,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/big-cola.webp"
+  },
+  {
+    "id": "bebidas-big-cola-manzana",
+    "nombre": "Big-cola Manzana",
+    "precio": 4500,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/big-cola-manzana.webp"
+  },
+  {
+    "id": "bebidas-big-cola-manzana-personal",
+    "nombre": "Big-cola Manzana personal",
+    "precio": 1800,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/big-cola-manzana-personal.webp"
+  },
+  {
+    "id": "bebidas-big-cola-personal",
+    "nombre": "Big-cola personal",
+    "precio": 1800,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/big-cola-personal.webp"
+  },
+  {
+    "id": "bebidas-cifrut-1-7",
+    "nombre": "Cifrut 1.7",
+    "precio": 4500,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/cifrut-1-7.webp"
+  },
+  {
+    "id": "bebidas-cifrut-de-granadilla-personal",
+    "nombre": "Cifrut de granadilla personal",
+    "precio": 1800,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/cifrut-de-granadilla-personal.webp"
+  },
+  {
+    "id": "bebidas-cifrut-granadilla-1-7",
+    "nombre": "Cifrut granadilla 1.7",
+    "precio": 4500,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/cifrut-granadilla-1-7.webp"
+  },
+  {
+    "id": "bebidas-cifrut-naranja-personal",
+    "nombre": "Cifrut Naranja personal",
+    "precio": 1800,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/cifrut-naranja-personal.webp"
+  },
+  {
+    "id": "bebidas-coca-cola-1-litro",
+    "nombre": "Coca-Cola 1 litro",
+    "precio": 7500,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/coca-cola-1-litro.webp"
+  },
+  {
+    "id": "bebidas-coca-cola-3-litros",
+    "nombre": "Coca-Cola 3 litros",
+    "precio": 12000,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/coca-cola-3-litros.webp"
+  },
+  {
+    "id": "bebidas-coca-cola-personal",
+    "nombre": "Coca-Cola personal",
+    "precio": 3500,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/coca-cola-personal.webp"
+  },
+  {
+    "id": "bebidas-colombiana",
+    "nombre": "Colombiana",
+    "precio": 5000,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/colombiana.webp"
+  },
+  {
+    "id": "bebidas-cuatro-3-litros",
+    "nombre": "Cuatro 3 litros",
+    "precio": 12000,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/cuatro-3-litros.webp"
+  },
+  {
+    "id": "bebidas-gatorade",
+    "nombre": "Gatorade",
+    "precio": 4500,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/gatorade.webp"
+  },
+  {
+    "id": "bebidas-pony-mini",
+    "nombre": "Pony Mini",
+    "precio": 2300,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/pony-mini.webp"
+  },
+  {
+    "id": "bebidas-pony-personal",
+    "nombre": "Pony personal",
+    "precio": 3500,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/pony-personal.webp"
+  },
+  {
+    "id": "bebidas-postobon-manzana",
+    "nombre": "Postobón manzana",
+    "precio": 5000,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/postobon-manzana.webp"
+  },
+  {
+    "id": "bebidas-tangelo",
+    "nombre": "Tangelo",
+    "precio": 1500,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/tangelo.webp"
+  },
+  {
+    "id": "bebidas-tangelo-de-bolsita",
+    "nombre": "Tangelo de bolsita",
+    "precio": 1600,
+    "categoria": "Bebidas",
+    "imagen": "/productos/bebidas/tangelo-de-bolsita.webp"
+  },
+  {
+    "id": "mecatos-cheese-tris",
+    "nombre": "Cheese Tris",
+    "precio": 2300,
+    "categoria": "Mecatos",
+    "imagen": "/productos/mecatos/cheese-tris.webp"
+  },
+  {
+    "id": "mecatos-chicharron-el-canario",
+    "nombre": "Chicharrón El Canario",
+    "precio": 2300,
+    "categoria": "Mecatos",
+    "imagen": "/productos/mecatos/chicharron-el-canario.webp"
+  },
+  {
+    "id": "mecatos-choclitos",
+    "nombre": "Choclitos",
+    "precio": 2300,
+    "categoria": "Mecatos",
+    "imagen": "/productos/mecatos/choclitos.webp"
+  },
+  {
+    "id": "mecatos-croc-and-nachos",
+    "nombre": "Croc-And Nachos",
+    "precio": 1200,
+    "categoria": "Mecatos",
+    "imagen": "/productos/mecatos/croc-and-nachos.webp"
+  },
+  {
+    "id": "mecatos-delipapitas-limon-pollo-y-mayonesa",
+    "nombre": "Delipapitas Limón, Pollo y Mayonesa",
+    "precio": 1200,
+    "categoria": "Mecatos",
+    "imagen": "/productos/mecatos/delipapitas-limon-pollo-y-mayonesa.webp"
+  },
+  {
+    "id": "mecatos-detoditos-bbq",
+    "nombre": "DeToditos BBQ",
+    "precio": 3000,
+    "categoria": "Mecatos",
+    "imagen": "/productos/mecatos/detoditos-bbq.webp"
+  },
+  {
+    "id": "mecatos-detoditos-chimichurri-argentino",
+    "nombre": "DeToditos Chimichurri Argentino",
+    "precio": 3000,
+    "categoria": "Mecatos",
+    "imagen": "/productos/mecatos/detoditos-chimichurri-argentino.webp"
+  },
+  {
+    "id": "mecatos-detoditos-mix",
+    "nombre": "DeToditos MIX",
+    "precio": 3000,
+    "categoria": "Mecatos",
+    "imagen": "/productos/mecatos/detoditos-mix.webp"
+  },
+  {
+    "id": "mecatos-margaritas-de-limon-y-pollo",
+    "nombre": "Margaritas de limón y pollo",
+    "precio": 2600,
+    "categoria": "Mecatos",
+    "imagen": "/productos/mecatos/margaritas-de-limon-y-pollo.webp"
+  },
+  {
+    "id": "mecatos-margaritas-de-limon-y-pollo-grandes",
+    "nombre": "Margaritas de limón y pollo grandes",
+    "precio": 8000,
+    "categoria": "Mecatos",
+    "imagen": "/productos/mecatos/margaritas-de-limon-y-pollo-grandes.webp"
+  },
+  {
+    "id": "mecatos-picadas-el-canario",
+    "nombre": "Picadas El Canario",
+    "precio": 1600,
+    "categoria": "Mecatos",
+    "imagen": "/productos/mecatos/picadas-el-canario.webp"
+  },
+  {
+    "id": "mercado-aceite-grande",
+    "nombre": "Aceite Grande",
+    "precio": 9000,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/aceite-grande.webp"
+  },
+  {
+    "id": "mercado-aceite-mediano",
+    "nombre": "Aceite Mediano",
+    "precio": 5200,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/aceite-mediano.webp"
+  },
+  {
+    "id": "mercado-aceite-pequeno",
+    "nombre": "Aceite Pequeño",
+    "precio": 2000,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/aceite-pequeno.webp"
+  },
+  {
+    "id": "mercado-aji",
+    "nombre": "Ají",
+    "precio": 500,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/aji.webp"
+  },
+  {
+    "id": "mercado-aromatica-de-manzanilla",
+    "nombre": "Aromática de manzanilla",
+    "precio": 300,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/aromatica-de-manzanilla.webp"
+  },
+  {
+    "id": "mercado-arroz-roa",
+    "nombre": "Arroz Roa",
+    "precio": 2400,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/arroz-roa.webp"
+  },
+  {
+    "id": "mercado-azucar",
+    "nombre": "Azúcar",
+    "precio": 2600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/azucar.webp"
+  },
+  {
+    "id": "mercado-bandeja",
+    "nombre": "Bandeja",
+    "precio": 12000,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/bandeja.webp"
+  },
+  {
+    "id": "mercado-bicarbonato-de-soda",
+    "nombre": "Bicarbonato de Soda",
+    "precio": 800,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/bicarbonato-de-soda.webp"
+  },
+  {
+    "id": "mercado-bombilla-led",
+    "nombre": "Bombilla LED",
+    "precio": 5500,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/bombilla-led.webp"
+  },
+  {
+    "id": "mercado-caja-de-fosforos",
+    "nombre": "Caja de fósforos",
+    "precio": 600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/caja-de-fosforos.webp"
+  },
+  {
+    "id": "mercado-caldo-de-gallina-desmenuzado",
+    "nombre": "Caldo de Gallina Desmenuzado",
+    "precio": 600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/caldo-de-gallina-desmenuzado.webp"
+  },
+  {
+    "id": "mercado-cebolla-cabezona",
+    "nombre": "Cebolla Cabezona",
+    "precio": 2000,
+    "categoria": "Mercado",
+    "unidad": "la libra",
+    "imagen": "/productos/mercado/cebolla-cabezona.webp"
+  },
+  {
+    "id": "mercado-cebolla-larga",
+    "nombre": "Cebolla Larga",
+    "precio": 900,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/cebolla-larga.webp"
+  },
+  {
+    "id": "mercado-choco-krispis",
+    "nombre": "Choco Krispis",
+    "precio": 1600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/choco-krispis.webp"
+  },
+  {
+    "id": "mercado-chocolisto",
+    "nombre": "Chocolisto",
+    "precio": 900,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/chocolisto.webp"
+  },
+  {
+    "id": "mercado-clavos-de-olor",
+    "nombre": "Clavos de olor",
+    "precio": 700,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/clavos-de-olor.webp"
+  },
+  {
+    "id": "mercado-colorey-color",
+    "nombre": "Colorey color",
+    "precio": 800,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/colorey-color.webp"
+  },
+  {
+    "id": "mercado-crema-de-leche",
+    "nombre": "Crema de Leche",
+    "precio": 2900,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/crema-de-leche.webp"
+  },
+  {
+    "id": "mercado-crispetas",
+    "nombre": "Crispetas",
+    "precio": 2000,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/crispetas.webp"
+  },
+  {
+    "id": "mercado-cuarto-de-cafe",
+    "nombre": "Cuarto de café",
+    "precio": 7800,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/cuarto-de-cafe.webp"
+  },
+  {
+    "id": "mercado-encendedores",
+    "nombre": "Encendedores",
+    "precio": 1000,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/encendedores.webp"
+  },
+  {
+    "id": "mercado-galletas-saltinas",
+    "nombre": "Galletas Saltinas",
+    "precio": 2000,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/galletas-saltinas.webp"
+  },
+  {
+    "id": "mercado-galletas-saltinas-dore",
+    "nombre": "Galletas Saltinas Doré",
+    "precio": 3500,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/galletas-saltinas-dore.webp"
+  },
+  {
+    "id": "mercado-galletas-saltinas-mantequilla",
+    "nombre": "Galletas Saltinas Mantequilla",
+    "precio": 2900,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/galletas-saltinas-mantequilla.webp"
+  },
+  {
+    "id": "mercado-guisamac",
+    "nombre": "Guisamac",
+    "precio": 1100,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/guisamac.webp"
+  },
+  {
+    "id": "mercado-harina-de-trigo",
+    "nombre": "Harina de trigo",
+    "precio": 2000,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/harina-de-trigo.webp"
+  },
+  {
+    "id": "mercado-harina-pan",
+    "nombre": "Harina PAN",
+    "precio": 2900,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/harina-pan.webp"
+  },
+  {
+    "id": "mercado-huevos",
+    "nombre": "Huevos",
+    "precio": 600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/huevos.webp"
+  },
+  {
+    "id": "mercado-leche-deslactosada",
+    "nombre": "Leche Deslactosada",
+    "precio": 6000,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/leche-deslactosada.webp"
+  },
+  {
+    "id": "mercado-leche-klim",
+    "nombre": "Leche Klim",
+    "precio": 1600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/leche-klim.webp"
+  },
+  {
+    "id": "mercado-leche-litro",
+    "nombre": "Leche Litro",
+    "precio": 6000,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/leche-litro.webp"
+  },
+  {
+    "id": "mercado-leche-mediana",
+    "nombre": "Leche Mediana",
+    "precio": 2600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/leche-mediana.webp"
+  },
+  {
+    "id": "mercado-leche-pequena",
+    "nombre": "Leche Pequeña",
+    "precio": 1600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/leche-pequena.webp"
+  },
+  {
+    "id": "mercado-lechera",
+    "nombre": "Lechera",
+    "precio": 1200,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/lechera.webp"
+  },
+  {
+    "id": "mercado-lentejas",
+    "nombre": "Lentejas",
+    "precio": 3000,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/lentejas.webp"
+  },
+  {
+    "id": "mercado-maggi-dona-gallina",
+    "nombre": "Maggi Doña Gallina",
+    "precio": 600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/maggi-dona-gallina.webp"
+  },
+  {
+    "id": "mercado-mantequilla",
+    "nombre": "Mantequilla",
+    "precio": 2800,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/mantequilla.webp"
+  },
+  {
+    "id": "mercado-miel",
+    "nombre": "Miel",
+    "precio": 900,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/miel.webp"
+  },
+  {
+    "id": "mercado-milo",
+    "nombre": "Milo",
+    "precio": 1100,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/milo.webp"
+  },
+  {
+    "id": "mercado-nescafe-dolca",
+    "nombre": "Nescafé Dolca",
+    "precio": 1800,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/nescafe-dolca.webp"
+  },
+  {
+    "id": "mercado-panal-de-huevos",
+    "nombre": "Panal de Huevos",
+    "precio": 14500,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/panal-de-huevos.webp"
+  },
+  {
+    "id": "mercado-panela-pequena",
+    "nombre": "Panela Pequeña",
+    "precio": 1100,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/panela-pequena.webp"
+  },
+  {
+    "id": "mercado-panelada",
+    "nombre": "Panelada",
+    "precio": 1600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/panelada.webp"
+  },
+  {
+    "id": "mercado-papa-parda",
+    "nombre": "Papa Parda",
+    "precio": 1500,
+    "categoria": "Mercado",
+    "unidad": "la libra",
+    "imagen": "/productos/mercado/papa-parda.webp"
+  },
+  {
+    "id": "mercado-papel-familia",
+    "nombre": "Papel Familia",
+    "precio": 2600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/papel-familia.webp"
+  },
+  {
+    "id": "mercado-papeleta-de-cafe",
+    "nombre": "Papeleta de café",
+    "precio": 2900,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/papeleta-de-cafe.webp"
+  },
+  {
+    "id": "mercado-pasta-de-chocolate-luker",
+    "nombre": "Pasta de Chocolate Luker",
+    "precio": 1300,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/pasta-de-chocolate-luker.webp"
+  },
+  {
+    "id": "mercado-pilas-doble-a",
+    "nombre": "Pilas Doble A",
+    "precio": 2200,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/pilas-doble-a.webp"
+  },
+  {
+    "id": "mercado-pilas-triple-a",
+    "nombre": "Pilas Triple A",
+    "precio": 2200,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/pilas-triple-a.webp"
+  },
+  {
+    "id": "mercado-recortes-de-pollo",
+    "nombre": "Recortes de Pollo",
+    "precio": 5000,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/recortes-de-pollo.webp"
+  },
+  {
+    "id": "mercado-ricostilla-cubo",
+    "nombre": "Ricostilla Cubo",
+    "precio": 600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/ricostilla-cubo.webp"
+  },
+  {
+    "id": "mercado-ricostilla-en-sobre",
+    "nombre": "Ricostilla en Sobre",
+    "precio": 600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/ricostilla-en-sobre.webp"
+  },
+  {
+    "id": "mercado-sal",
+    "nombre": "Sal",
+    "precio": 1600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/sal.webp"
+  },
+  {
+    "id": "mercado-salsa-bbq",
+    "nombre": "Salsa BBQ",
+    "precio": 1700,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/salsa-bbq.webp"
+  },
+  {
+    "id": "mercado-salsa-de-tomate",
+    "nombre": "Salsa de Tomate",
+    "precio": 1600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/salsa-de-tomate.webp"
+  },
+  {
+    "id": "mercado-salsa-mayonesa",
+    "nombre": "Salsa Mayonesa",
+    "precio": 1600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/salsa-mayonesa.webp"
+  },
+  {
+    "id": "mercado-salsa-rosada",
+    "nombre": "Salsa Rosada",
+    "precio": 2800,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/salsa-rosada.webp"
+  },
+  {
+    "id": "mercado-servilletas-nova",
+    "nombre": "Servilletas Nova",
+    "precio": 1600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/servilletas-nova.webp"
+  },
+  {
+    "id": "mercado-sobre-de-canela",
+    "nombre": "Sobre de Canela",
+    "precio": 700,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/sobre-de-canela.webp"
+  },
+  {
+    "id": "mercado-suntea",
+    "nombre": "Suntea",
+    "precio": 1600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/suntea.webp"
+  },
+  {
+    "id": "mercado-tomates",
+    "nombre": "Tomates",
+    "precio": 1700,
+    "categoria": "Mercado",
+    "unidad": "la libra",
+    "imagen": "/productos/mercado/tomates.webp"
+  },
+  {
+    "id": "mercado-tostados",
+    "nombre": "Tostados",
+    "precio": 2000,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/tostados.webp"
+  },
+  {
+    "id": "mercado-zucaritas",
+    "nombre": "Zucaritas",
+    "precio": 1600,
+    "categoria": "Mercado",
+    "imagen": "/productos/mercado/zucaritas.webp"
+  },
+  {
+    "id": "productos-y-otros-ariel-libra",
+    "nombre": "Ariel libra",
+    "precio": 6300,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/ariel-libra.webp"
+  },
+  {
+    "id": "productos-y-otros-ariel-mediano",
+    "nombre": "Ariel mediano",
+    "precio": 3600,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/ariel-mediano.webp"
+  },
+  {
+    "id": "productos-y-otros-ariel-pequeno",
+    "nombre": "Ariel pequeño",
+    "precio": 2000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/ariel-pequeno.webp"
+  },
+  {
+    "id": "productos-y-otros-brilla-king",
+    "nombre": "Brilla King",
+    "precio": 3500,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/brilla-king.webp"
+  },
+  {
+    "id": "productos-y-otros-cepillos-colgate",
+    "nombre": "Cepillos Colgate",
+    "precio": 3300,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/cepillos-colgate.webp"
+  },
+  {
+    "id": "productos-y-otros-colgate-triple-accion-grande",
+    "nombre": "Colgate Triple Acción Grande",
+    "precio": 4600,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/colgate-triple-accion-grande.webp"
+  },
+  {
+    "id": "productos-y-otros-colgate-triple-accion-pequeno",
+    "nombre": "Colgate Triple Acción Pequeño",
+    "precio": 2500,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/colgate-triple-accion-pequeno.webp"
+  },
+  {
+    "id": "productos-y-otros-desodorante-balance",
+    "nombre": "Desodorante Balance",
+    "precio": 1000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/desodorante-balance.webp"
+  },
+  {
+    "id": "productos-y-otros-desodorante-lady-speed-stick",
+    "nombre": "Desodorante Lady Speed Stick",
+    "precio": 1400,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/desodorante-lady-speed-stick.webp"
+  },
+  {
+    "id": "productos-y-otros-desodorante-speed-stick",
+    "nombre": "Desodorante Speed Stick",
+    "precio": 1400,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/desodorante-speed-stick.webp"
+  },
+  {
+    "id": "productos-y-otros-disco-de-axion",
+    "nombre": "Disco de axion",
+    "precio": 1700,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/disco-de-axion.webp"
+  },
+  {
+    "id": "productos-y-otros-esponja-multiusos",
+    "nombre": "Esponja Multiusos",
+    "precio": 1000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/esponja-multiusos.webp"
+  },
+  {
+    "id": "productos-y-otros-esponja-sabra",
+    "nombre": "Esponja sabra",
+    "precio": 700,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/esponja-sabra.webp"
+  },
+  {
+    "id": "productos-y-otros-esponjilla-de-acero-inoxidable",
+    "nombre": "Esponjilla de acero inoxidable",
+    "precio": 900,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/esponjilla-de-acero-inoxidable.webp"
+  },
+  {
+    "id": "productos-y-otros-fab-libra",
+    "nombre": "Fab libra",
+    "precio": 6400,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/fab-libra.webp"
+  },
+  {
+    "id": "productos-y-otros-fab-mediano",
+    "nombre": "Fab mediano",
+    "precio": 3600,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/fab-mediano.webp"
+  },
+  {
+    "id": "productos-y-otros-fab-pequeno",
+    "nombre": "Fab Pequeño",
+    "precio": 2000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/fab-pequeno.webp"
+  },
+  {
+    "id": "productos-y-otros-fabuloso",
+    "nombre": "Fabuloso",
+    "precio": 2500,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/fabuloso.webp"
+  },
+  {
+    "id": "productos-y-otros-head-and-shoulders-limpieza-renovadora",
+    "nombre": "Head and Shoulders limpieza renovadora",
+    "precio": 1100,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/head-and-shoulders-limpieza-renovadora.webp"
+  },
+  {
+    "id": "productos-y-otros-jabon-antibacterial",
+    "nombre": "Jabón Antibacterial",
+    "precio": 5500,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/jabon-antibacterial.webp"
+  },
+  {
+    "id": "productos-y-otros-jabon-coco",
+    "nombre": "Jabón Coco",
+    "precio": 2800,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/jabon-coco.webp"
+  },
+  {
+    "id": "productos-y-otros-jabon-johnson",
+    "nombre": "Jabón Johnson",
+    "precio": 3700,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/jabon-johnson.webp"
+  },
+  {
+    "id": "productos-y-otros-jabon-palmolive",
+    "nombre": "Jabón Palmolive",
+    "precio": 3700,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/jabon-palmolive.webp"
+  },
+  {
+    "id": "productos-y-otros-jabon-protex",
+    "nombre": "Jabón Protex",
+    "precio": 3700,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/jabon-protex.webp"
+  },
+  {
+    "id": "productos-y-otros-jabon-rey",
+    "nombre": "Jabón Rey",
+    "precio": 4300,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/jabon-rey.webp"
+  },
+  {
+    "id": "productos-y-otros-maquina-de-afeitar-xtreme-3",
+    "nombre": "Máquina de Afeitar Xtreme 3",
+    "precio": 3500,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/maquina-de-afeitar-xtreme-3.webp"
+  },
+  {
+    "id": "productos-y-otros-maquina-gillette-prestobarba-ultragrip-2",
+    "nombre": "Máquina Gillette Prestobarba Ultragrip 2",
+    "precio": 2500,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/maquina-gillette-prestobarba-ultragrip-2.webp"
+  },
+  {
+    "id": "productos-y-otros-maquina-prestobarba-dorco",
+    "nombre": "Máquina Prestobarba Dorco",
+    "precio": 1000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/maquina-prestobarba-dorco.webp"
+  },
+  {
+    "id": "productos-y-otros-mega-super-riel",
+    "nombre": "Mega Super Riel",
+    "precio": 4300,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/mega-super-riel.webp"
+  },
+  {
+    "id": "productos-y-otros-panales-winny-etapa-5",
+    "nombre": "Pañales Winny Etapa 5",
+    "precio": 2000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/panales-winny-etapa-5.webp"
+  },
+  {
+    "id": "productos-y-otros-paquetes-de-sobre-savital-shampoo-acondicionador-y-crema-para-peinar",
+    "nombre": "Paquetes de sobre Savital, shampoo, acondicionador y crema para peinar",
+    "precio": 1100,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/paquetes-de-sobre-savital-shampoo-acondicionador-y-crema-para-peinar.webp"
+  },
+  {
+    "id": "productos-y-otros-proteccion-nosotras",
+    "nombre": "Protección Nosotras",
+    "precio": 200,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/proteccion-nosotras.webp"
+  },
+  {
+    "id": "productos-y-otros-rollo-de-esponjilla-metalica",
+    "nombre": "Rollo de esponjilla metálica",
+    "precio": 400,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/rollo-de-esponjilla-metalica.webp"
+  },
+  {
+    "id": "productos-y-otros-sabras",
+    "nombre": "Sabras",
+    "precio": 400,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/sabras.webp"
+  },
+  {
+    "id": "productos-y-otros-sobre-de-polvo-vanish",
+    "nombre": "Sobre de polvo Vanish",
+    "precio": 2000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/sobre-de-polvo-vanish.webp"
+  },
+  {
+    "id": "productos-y-otros-sobre-de-suavitel",
+    "nombre": "Sobre de Suavitel",
+    "precio": 1100,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/sobre-de-suavitel.webp"
+  },
+  {
+    "id": "productos-y-otros-super-glue",
+    "nombre": "Super Glue",
+    "precio": 1000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/super-glue.webp"
+  },
+  {
+    "id": "productos-y-otros-toallas-nosotras",
+    "nombre": "Toallas Nosotras",
+    "precio": 700,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/toallas-nosotras.webp"
+  },
+  {
+    "id": "productos-y-otros-toallitas-humedas-koala",
+    "nombre": "Toallitas húmedas Koala",
+    "precio": 6800,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/toallitas-humedas-koala.webp"
+  },
+  {
+    "id": "productos-y-otros-toallitas-humedas-luvilo-todo-tipo-de-usos",
+    "nombre": "Toallitas húmedas Luvilo todo tipo de usos",
+    "precio": 6000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/toallitas-humedas-luvilo-todo-tipo-de-usos.webp"
+  },
+  {
+    "id": "productos-y-otros-vr-ambientador-aroma-lavanda",
+    "nombre": "VR Ambientador Aroma Lavanda",
+    "precio": 6000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/vr-ambientador-aroma-lavanda.webp"
+  },
+  {
+    "id": "productos-y-otros-vr-detergente-azul-aroma-floral",
+    "nombre": "VR Detergente Azul Aroma Floral",
+    "precio": 6000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/vr-detergente-azul-aroma-floral.webp"
+  },
+  {
+    "id": "productos-y-otros-vr-detergente-blanco-aroma-floral",
+    "nombre": "VR Detergente Blanco Aroma Floral",
+    "precio": 6000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/vr-detergente-blanco-aroma-floral.webp"
+  },
+  {
+    "id": "productos-y-otros-vr-detergente-blanco-aroma-primavera",
+    "nombre": "VR Detergente Blanco Aroma Primavera",
+    "precio": 6000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/vr-detergente-blanco-aroma-primavera.webp"
+  },
+  {
+    "id": "productos-y-otros-vr-detergente-grande-aroma-floral",
+    "nombre": "VR Detergente Grande Aroma Floral",
+    "precio": 15000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/vr-detergente-grande-aroma-floral.webp"
+  },
+  {
+    "id": "productos-y-otros-vr-detergente-negro-aroma-floral",
+    "nombre": "VR Detergente Negro Aroma Floral",
+    "precio": 6000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/vr-detergente-negro-aroma-floral.webp"
+  },
+  {
+    "id": "productos-y-otros-vr-suavitel-celeste-aroma-floral",
+    "nombre": "VR Suavitel celeste Aroma Floral",
+    "precio": 6000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/vr-suavitel-celeste-aroma-floral.webp"
+  },
+  {
+    "id": "productos-y-otros-vr-suavitel-grande-aroma-primavera",
+    "nombre": "VR Suavitel Grande Aroma Primavera",
+    "precio": 15000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/vr-suavitel-grande-aroma-primavera.webp"
+  },
+  {
+    "id": "productos-y-otros-vr-suavitel-verde-aroma-floral",
+    "nombre": "VR Suavitel Verde Aroma Floral",
+    "precio": 6000,
+    "categoria": "Productos y otros",
+    "imagen": "/productos/productos-y-otros/vr-suavitel-verde-aroma-floral.webp"
+  }
+]

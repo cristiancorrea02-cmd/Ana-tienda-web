@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /quHoZ3ckEc9rLuBMpbcf
+Disallow: /api/
+
+Sitemap: https://ana-tienda-1976e.web.app/sitemap.xml

@@ -1,0 +1,27 @@
+# Adargeyi
+
+> Tienda física y catálogo virtual de víveres, abarrotes, bebidas y productos para el hogar en Cali, Colombia.
+
+Adargeyi es una tienda local ubicada en el sector de Bella Suiza en Cali, Valle del Cauca. Ofrece un amplio surtido de productos de consumo diario, abarrotes, bebidas refrescantes, mecatos, artículos de aseo personal y limpieza del hogar, con atención en tienda y pedidos en línea con opción de recogida o entrega a domicilio.
+
+## Enlaces Principales
+
+- [Página Principal de Adargeyi](https://ana-tienda-1976e.web.app/)
+- [Catálogo Completo de Productos](https://ana-tienda-1976e.web.app/#catalogo)
+- [Información de la Tienda y Sobre Nosotros](https://ana-tienda-1976e.web.app/#nosotros)
+- [Ubicación Física y Horarios](https://ana-tienda-1976e.web.app/#visitanos)
+- [Ubicación en Google Maps](https://maps.app.goo.gl/8UFMnGvAGRTEm46h9)
+
+## Categorías del Catálogo
+
+- [Categoría Bebidas](https://ana-tienda-1976e.web.app/#catalogo): Gaseosas, aguas, jugos, maltas y bebidas hidratantes.
+- [Categoría Mecatos](https://ana-tienda-1976e.web.app/#catalogo): Snacks, papas, chicharrones, tostadas y pasabocas.
+- [Categoría Mercado](https://ana-tienda-1976e.web.app/#catalogo): Granos, arroz, aceites, azúcar, pastas, condimentos y productos básicos de la canasta familiar.
+- [Categoría Productos y Otros](https://ana-tienda-1976e.web.app/#catalogo): Detergentes, jabones, papel higiénico, cuidado bucal y artículos de limpieza del hogar.
+
+## Información de la Tienda Física
+
+- **Dirección**: Manzana A Casa 8 Parte Alta El Edén Sector, Bella Suiza, Cali, Valle del Cauca, Colombia.
+- **Coordenadas**: 3.4064474, -76.5774718
+- **Horario de atención**: Todos los días de 7:00 AM a 10:00 PM.
+- **Modalidades de compra**: Compra presencial en tienda y pedidos por catálogo web con entrega a domicilio o recogida.

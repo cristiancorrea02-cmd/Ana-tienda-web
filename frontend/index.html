@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F4F7FB">
+  <title>Adargeyi | Tienda de víveres, abarrotes y productos para el hogar en Cali</title>
+  <meta name="description"
+    content="Conoce Adargeyi, tu tienda de abarrotes, víveres, bebidas y artículos para el hogar en Cali (El Edén, Bella Suiza). Consulta el catálogo con precios y realiza tus pedidos en línea.">
+  <meta name="keywords"
+    content="Adargeyi, tienda Cali, tienda de abarrotes Cali, víveres Cali, tienda virtual Cali, El Edén Bella Suiza, productos para el hogar Cali, bebidas Cali, domicilios Cali">
+  <meta name="google-site-verification" content="google45a24aa830bcf1c4">
+  <link rel="canonical" href="https://ana-tienda-1976e.web.app/">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:url" content="https://ana-tienda-1976e.web.app/">
+  <meta property="og:title" content="Adargeyi | Tienda de víveres, abarrotes y productos para el hogar en Cali">
+  <meta property="og:description"
+    content="Consulta nuestro catálogo en línea con precios actualizados y realiza pedidos para entrega a domicilio o recogida en tienda.">
+  <meta property="og:image" content="https://ana-tienda-1976e.web.app/portada.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Adargeyi | Tienda de víveres, abarrotes y productos para el hogar en Cali">
+  <meta name="twitter:description"
+    content="Consulta nuestro catálogo en línea con precios actualizados y realiza pedidos para entrega a domicilio o recogida en tienda.">
+  <meta name="twitter:image" content="https://ana-tienda-1976e.web.app/portada.webp">
+
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" href="/icon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GroceryStore",
+    "name": "Adargeyi",
+    "description": "Tienda física y virtual de víveres, abarrotes, bebidas y productos para el hogar en Cali, Colombia.",
+    "url": "https://ana-tienda-1976e.web.app/",
+    "image": "https://ana-tienda-1976e.web.app/portada.webp",
+    "telephone": "+573000000000",
+    "priceRange": "$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Manzana A Casa 8 Parte Alta El Edén Sector, Bella Suiza",
+      "addressLocality": "Cali",
+      "addressRegion": "Valle del Cauca",
+      "addressCountry": "CO"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 3.4064474,
+      "longitude": -76.5774718
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "07:00",
+        "closes": "22:00"
+      }
+    ],
+    "hasMap": "https://maps.app.goo.gl/8UFMnGvAGRTEm46h9"
+  }
+  </script>
+</head>
+
+<body class="antialiased text-tinta">
+
+  <header class="sticky top-0 z-50 bg-fondo/90 backdrop-blur-md border-b border-borde">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="font-serif-custom text-2xl font-semibold tracking-wide hover:opacity-80 transition" aria-label="Inicio Adargeyi">
+        Adargeyi
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide" aria-label="Navegación principal">
+        <a href="#catalogo" class="text-tinta hover:text-acento transition">Catálogo</a>
+        <a href="#nosotros" class="text-tinta hover:text-acento transition">Nosotros</a>
+        <a href="#visitanos" class="text-tinta hover:text-acento transition">Visítanos</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <span id="acceso-propietario" class="contents"></span>
+        <button id="open-cart" type="button" aria-label="Carrito de compras, 0 productos" aria-expanded="false"
+          aria-controls="cart-drawer"
+          class="relative inline-flex items-center justify-center w-11 h-11 rounded-full border border-control text-tinta hover:border-acento hover:text-acento transition focus-visible:ring-2 focus-visible:ring-acento cursor-pointer">
+          <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+              d="M6 8h12l-1 12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2zM9 8a3 3 0 0 1 6 0" />
+          </svg>
+          <span id="cart-badge" aria-live="polite"
+            class="hidden absolute -top-1 -right-1 min-w-5 h-5 px-1 rounded-full bg-acento-fuerte text-white text-xs font-semibold items-center justify-center">0</span>
+        </button>
+        <a href="#visitanos"
+          class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-acento hover:bg-acento-fuerte rounded-full transition focus-visible:ring-2 focus-visible:ring-acento">
+          Dónde estamos
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-16 md:py-24 px-6 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-acento font-semibold">Tienda de víveres y abarrotes en Cali</span>
+          <h1 class="font-serif-custom text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight mt-3 mb-6">
+            Víveres, abarrotes y productos para el hogar.
+          </h1>
+          <p class="text-tinta-suave text-lg leading-relaxed mb-8 max-w-lg">
+            Conoce los productos y precios de Adargeyi antes de llegar, haz tus pedidos en línea o pasa por nuestra tienda en El Edén, Bella Suiza (Cali).
+            Abrimos todos los días de 7:00&nbsp;a.&nbsp;m. a 10:00&nbsp;p.&nbsp;m.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="#catalogo"
+              class="inline-flex items-center justify-center px-8 py-4 bg-acento hover:bg-acento-fuerte text-white rounded-full font-medium transition shadow-sm hover:shadow">
+              Ver catálogo en línea
+            </a>
+            <a href="#visitanos"
+              class="inline-flex items-center justify-center px-8 py-4 border border-acento text-acento hover:bg-acento hover:text-white rounded-full font-medium transition">
+              Cómo llegar
+            </a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-4/3 bg-hielo rounded-3xl overflow-hidden shadow-sm">
+            <img src="/portada.webp" alt="Fachada e identidad de la tienda Adargeyi en Cali" width="1092" height="819"
+              fetchpriority="high" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogo" class="scroll-mt-20 py-16 px-6 max-w-7xl mx-auto border-t border-borde/60">
+      <div class="mb-8">
+        <h2 class="font-serif-custom text-3xl font-semibold mb-3">Catálogo de Productos</h2>
+        <p class="text-tinta-suave">Explora productos frescos y abarrotes disponibles. Pulsa cualquier producto para ver sus detalles ampliados o agrégalo directamente al carrito.</p>
+      </div>
+
+      <label for="buscar-productos" class="block max-w-xl mb-3 text-sm font-medium text-tinta">Buscar productos por palabra clave</label>
+      <div class="relative max-w-xl mb-6">
+        <svg aria-hidden="true" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-tinta-suave"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7" stroke-width="2"></circle>
+          <path stroke-linecap="round" stroke-width="2" d="m16 16 4 4"></path>
+        </svg>
+        <input id="buscar-productos" type="search" autocomplete="off"
+          placeholder="Ej. arroz, bebidas, aceite, jabón…"
+          class="w-full rounded-2xl border border-control bg-white py-3 pl-12 pr-4 text-tinta focus-visible:ring-2 focus-visible:ring-acento">
+      </div>
+
+      <div id="filtros-categorias" role="group" aria-label="Filtrar por categoría" class="flex flex-wrap gap-2 mb-8">
+      </div>
+
+      <div id="lista-productos" role="status" aria-live="polite" aria-busy="false" class="space-y-14">
+        <p class="text-tinta-suave">Cargando catálogo…</p>
+      </div>
+    </section>
+
+    <section id="visitanos" class="py-16 px-6 bg-hielo/50">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+
+          <div>
+            <span class="text-xs uppercase tracking-widest text-acento font-semibold">Tienda Física y Domicilios</span>
+            <h2 class="font-serif-custom text-3xl font-semibold my-3">Ven a visitarnos</h2>
+            <p class="text-tinta-suave mb-6">
+              Te esperamos en nuestra sede física en Bella Suiza o pide a domicilio en Cali con nuestro catálogo web.
+            </p>
+
+            <div class="space-y-4 text-sm">
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-acento mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <div>
+                  <strong class="block text-tinta">Dirección:</strong>
+                  <span class="text-tinta-suave">Manzana A Casa 8 Parte Alta El Edén Sector, Bella Suiza, Cali, Valle del Cauca</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-acento mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div>
+                  <strong class="block text-tinta">Horario de atención:</strong>
+                  <span class="text-tinta-suave">Todos los días: 7:00 AM — 10:00 PM</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://maps.app.goo.gl/8UFMnGvAGRTEm46h9" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 mt-8 px-6 py-3 bg-tinta hover:bg-acento-fuerte text-white rounded-full text-sm font-medium transition">
+              <span>Abrir en Google Maps</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="lg:col-span-2 aspect-video sm:aspect-21/9 lg:aspect-auto lg:h-[380px] rounded-3xl overflow-hidden shadow-sm border border-borde">
+            <iframe title="Mapa con la ubicación de la tienda Adargeyi en Bella Suiza, Cali"
+              src="https://www.google.com/maps?q=3.4064474,-76.5774718&z=17&output=embed"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="py-16 px-6 max-w-4xl mx-auto text-center">
+      <h2 class="font-serif-custom text-3xl font-semibold mb-4">Sobre Adargeyi</h2>
+      <p class="text-tinta-suave leading-relaxed text-lg">
+        Adargeyi es una tienda de barrio en Cali donde encuentras los productos esenciales para tu día a día: víveres, mercado, bebidas frías, mecatos, pasabocas y artículos de aseo para el hogar y cuidado personal. Compra presencialmente o haz tus pedidos online con recogida o domicilio.
+      </p>
+    </section>
+  </main>
+
+  <!-- Modal de Detalle de Producto -->
+  <div id="product-modal-backdrop" class="hidden fixed inset-0 z-[80] bg-slate-950/60 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6" aria-hidden="true">
+    <div id="product-modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-product-title"
+      class="bg-superficie rounded-3xl max-w-md w-full overflow-hidden shadow-2xl border border-borde flex flex-col max-h-[90vh]">
+      <div class="relative aspect-4/3 bg-hielo shrink-0 flex items-center justify-center overflow-hidden">
+        <img id="modal-product-image" src="/icon-192.png" alt="Detalle del producto" class="w-full h-full object-contain p-4 transition-transform duration-300">
+        <button id="modal-close-button" type="button" aria-label="Cerrar detalles del producto"
+          class="absolute top-3 right-3 inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/90 text-tinta hover:bg-white shadow-md focus-visible:ring-2 focus-visible:ring-acento transition cursor-pointer">
+          <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 6 12 12M18 6 6 18" />
+          </svg>
+        </button>
+      </div>
+      <div class="p-6 space-y-4 overflow-y-auto">
+        <div>
+          <span id="modal-product-category" class="text-xs uppercase tracking-wider font-semibold text-acento">Categoría</span>
+          <h3 id="modal-product-title" class="font-serif-custom text-2xl font-semibold text-tinta mt-1">Nombre del producto</h3>
+          <p id="modal-product-price" class="text-2xl font-bold text-acento mt-2">$0</p>
+        </div>
+        <p id="modal-product-description" class="text-sm text-tinta-suave leading-relaxed">
+          Descripción del producto.
+        </p>
+        <div class="pt-2 flex flex-col sm:flex-row items-center gap-3">
+          <button id="modal-add-to-cart" type="button"
+            class="w-full sm:flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-acento hover:bg-acento-fuerte text-white font-medium py-3 px-6 shadow-sm transition focus-visible:ring-2 focus-visible:ring-acento cursor-pointer">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 8h12l-1 12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2zM9 8a3 3 0 0 1 6 0" />
+            </svg>
+            <span>Agregar al carrito</span>
+          </button>
+          <button id="modal-close-bottom" type="button"
+            class="w-full sm:w-auto rounded-full border border-control px-5 py-3 text-sm font-medium text-tinta hover:border-acento hover:text-acento transition cursor-pointer">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carrito Drawer -->
+  <div id="cart-overlay" class="hidden fixed inset-0 z-[60] bg-slate-950/40" aria-hidden="true"></div>
+  <aside id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true" inert
+    class="fixed inset-y-0 right-0 z-[70] flex w-full max-w-md translate-x-full flex-col bg-superficie shadow-2xl transition-transform duration-300">
+    <div class="flex items-center justify-between border-b border-borde px-5 py-4">
+      <h2 id="cart-title" class="font-serif-custom text-2xl font-semibold">Tu carrito</h2>
+      <button id="close-cart" type="button" aria-label="Cerrar carrito"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-full hover:bg-hielo focus-visible:ring-2 focus-visible:ring-acento cursor-pointer">
+        <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 6 12 12M18 6 6 18" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="cart-items" aria-live="polite" class="flex-1 overflow-y-auto px-5 py-3">
+      <p class="py-8 text-center text-tinta-suave">Tu carrito está vacío. Agrega productos del catálogo para verlos aquí.</p>
+    </div>
+
+    <div class="border-t border-borde px-5 py-4 space-y-4 max-h-[50vh] overflow-y-auto">
+      <fieldset class="space-y-2">
+        <legend class="text-xs uppercase tracking-wider font-semibold text-tinta">Modalidad de entrega</legend>
+        <div class="grid grid-cols-2 gap-2 text-xs font-medium">
+          <label class="flex items-center gap-2 p-2.5 rounded-xl border border-control cursor-pointer has-checked:border-acento has-checked:bg-acento/5 transition">
+            <input type="radio" name="cart-delivery-type" value="recogida" checked class="text-acento focus:ring-acento">
+            <span>🏬 Recogida en tienda</span>
+          </label>
+          <label class="flex items-center gap-2 p-2.5 rounded-xl border border-control cursor-pointer has-checked:border-acento has-checked:bg-acento/5 transition">
+            <input type="radio" name="cart-delivery-type" value="domicilio" class="text-acento focus:ring-acento">
+            <span>🛵 Domicilio en Cali</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <div id="cart-order-inputs" class="space-y-2">
+        <div>
+          <label for="cart-client-name" class="block text-xs font-semibold text-tinta mb-1">Nombre completo <span class="text-error">*</span></label>
+          <input id="cart-client-name" type="text" placeholder="Ej. Juan Pérez" maxlength="80"
+            class="w-full rounded-xl border border-control px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-acento">
+        </div>
+        <div>
+          <label for="cart-client-phone" class="block text-xs font-semibold text-tinta mb-1">Teléfono o WhatsApp <span class="text-error">*</span></label>
+          <input id="cart-client-phone" type="tel" placeholder="Ej. 315 123 4567" maxlength="30"
+            class="w-full rounded-xl border border-control px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-acento">
+        </div>
+        <div id="cart-address-wrapper" class="hidden">
+          <label for="cart-client-address" class="block text-xs font-semibold text-tinta mb-1">Dirección de entrega <span class="text-error">*</span></label>
+          <input id="cart-client-address" type="text" placeholder="Calle, carrera, casa/apto y barrio en Cali" maxlength="150"
+            class="w-full rounded-xl border border-control px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-acento">
+        </div>
+      </div>
+
+      <div class="bg-hielo/60 p-3 rounded-2xl space-y-1.5 text-xs">
+        <div class="flex justify-between text-tinta-suave">
+          <span>Subtotal productos:</span>
+          <span id="cart-summary-items-count" class="font-semibold text-tinta">$0</span>
+        </div>
+        <div class="flex justify-between text-tinta-suave">
+          <span>Entrega:</span>
+          <span id="cart-summary-delivery" class="font-semibold text-tinta">Recogida en tienda</span>
+        </div>
+        <div class="flex justify-between text-sm font-bold text-tinta pt-1 border-t border-borde/70">
+          <span>Total a pagar:</span>
+          <span id="cart-subtotal" class="text-acento">$0</span>
+        </div>
+      </div>
+
+      <button id="cart-submit-order" type="button"
+        class="inline-flex w-full items-center justify-center rounded-full bg-acento px-6 py-3 font-medium text-white transition hover:bg-acento-fuerte focus-visible:ring-2 focus-visible:ring-acento disabled:opacity-50 cursor-pointer">
+        Confirmar y realizar pedido
+      </button>
+
+      <button id="cart-whatsapp-button" type="button"
+        class="hidden inline-flex w-full items-center justify-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-700 px-6 py-3 font-medium text-white transition focus-visible:ring-2 focus-visible:ring-emerald-500 cursor-pointer shadow-sm">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M12.031 2C6.496 2 2 6.485 2 12.019c0 1.97.568 3.824 1.558 5.41L2 22l4.733-1.528A9.99 9.99 0 0 0 12.031 22c5.535 0 10.031-4.485 10.031-10.019C22.062 6.485 17.566 2 12.031 2zm5.82 14.28c-.24.675-1.396 1.294-1.928 1.378-.497.08-1.144.113-3.666-.93-3.224-1.332-5.3-4.608-5.46-4.823-.16-.214-1.3-1.732-1.3-3.303 0-1.571.823-2.343 1.116-2.663.294-.32.64-.401.854-.401.214 0 .428.002.615.012.199.01.464-.075.726.554.267.64.91 2.222.99 2.382.08.16.133.348.027.561-.107.214-.16.347-.32.534-.16.187-.336.417-.48.56-.16.16-.327.334-.14.654.187.32.83 1.368 1.78 2.213 1.222 1.088 2.252 1.425 2.572 1.585.32.16.507.134.694-.08.187-.214.8-1.015 1.014-1.362.214-.347.427-.294.72-.187.294.107 1.868.88 2.188 1.04.32.16.534.24.614.374.08.134.08.775-.16 1.45z"/>
+        </svg>
+        <span>Continuar por WhatsApp</span>
+      </button>
+
+      <p id="cart-order-status" class="text-xs text-center font-medium min-h-4"></p>
+
+      <a id="cart-location" href="#visitanos"
+        class="inline-flex w-full items-center justify-center rounded-full border border-control px-6 py-2.5 text-xs font-medium text-tinta-suave transition hover:border-acento hover:text-acento">
+        Ver dirección y mapa de la tienda
+      </a>
+    </div>
+  </aside>
+
+  <footer class="bg-tinta text-white py-12 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="font-serif-custom text-2xl font-semibold text-white">Adargeyi</div>
+      <p class="text-xs text-slate-300">© 2026 Adargeyi — Catálogo, abarrotes y productos para el hogar en Cali.</p>
+      <a href="/quHoZ3ckEc9rLuBMpbcf" class="inline-flex items-center gap-1.5 text-xs text-slate-400 hover:text-white transition">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+        </svg>
+        <span>Acceso Propietario</span>
+      </a>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

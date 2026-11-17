@@ -1,0 +1,1493 @@
+{
+  "name": "Adargeyi",
+  "description": "Tienda virtual y física de víveres, abarrotes, bebidas y productos para el hogar en Cali, Colombia.",
+  "url": "https://ana-tienda-1976e.web.app/",
+  "catalogUrl": "https://ana-tienda-1976e.web.app/#catalogo",
+  "location": {
+    "address": "Manzana A Casa 8 Parte Alta El Edén Sector, Bella Suiza, Cali, Valle del Cauca",
+    "city": "Cali",
+    "country": "CO",
+    "geo": {
+      "latitude": 3.4064474,
+      "longitude": -76.5774718
+    },
+    "mapUrl": "https://maps.app.goo.gl/8UFMnGvAGRTEm46h9"
+  },
+  "openingHours": "Mo-Su 07:00-22:00",
+  "categories": [
+    {
+      "name": "Bebidas",
+      "url": "https://ana-tienda-1976e.web.app/#catalogo",
+      "productCount": 21
+    },
+    {
+      "name": "Mecatos",
+      "url": "https://ana-tienda-1976e.web.app/#catalogo",
+      "productCount": 11
+    },
+    {
+      "name": "Mercado",
+      "url": "https://ana-tienda-1976e.web.app/#catalogo",
+      "productCount": 64
+    },
+    {
+      "name": "Productos y otros",
+      "url": "https://ana-tienda-1976e.web.app/#catalogo",
+      "productCount": 49
+    }
+  ],
+  "currency": "COP",
+  "totalProducts": 145,
+  "products": [
+    {
+      "id": "bebidas-agua-glacial-con-gas",
+      "name": "Agua glacial con gas",
+      "category": "Bebidas",
+      "price": 1800,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/agua-glacial-con-gas.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-agua-glacial-sin-gas",
+      "name": "Agua glacial sin gas",
+      "category": "Bebidas",
+      "price": 1800,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/agua-glacial-sin-gas.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-big-cola",
+      "name": "Big-cola",
+      "category": "Bebidas",
+      "price": 4500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/big-cola.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-big-cola-manzana",
+      "name": "Big-cola Manzana",
+      "category": "Bebidas",
+      "price": 4500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/big-cola-manzana.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-big-cola-manzana-personal",
+      "name": "Big-cola Manzana personal",
+      "category": "Bebidas",
+      "price": 1800,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/big-cola-manzana-personal.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-big-cola-personal",
+      "name": "Big-cola personal",
+      "category": "Bebidas",
+      "price": 1800,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/big-cola-personal.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-cifrut-1-7",
+      "name": "Cifrut 1.7",
+      "category": "Bebidas",
+      "price": 4500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/cifrut-1-7.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-cifrut-de-granadilla-personal",
+      "name": "Cifrut de granadilla personal",
+      "category": "Bebidas",
+      "price": 1800,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/cifrut-de-granadilla-personal.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-cifrut-granadilla-1-7",
+      "name": "Cifrut granadilla 1.7",
+      "category": "Bebidas",
+      "price": 4500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/cifrut-granadilla-1-7.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-cifrut-naranja-personal",
+      "name": "Cifrut Naranja personal",
+      "category": "Bebidas",
+      "price": 1800,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/cifrut-naranja-personal.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-coca-cola-1-litro",
+      "name": "Coca-Cola 1 litro",
+      "category": "Bebidas",
+      "price": 7500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/coca-cola-1-litro.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-coca-cola-3-litros",
+      "name": "Coca-Cola 3 litros",
+      "category": "Bebidas",
+      "price": 12000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/coca-cola-3-litros.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-coca-cola-personal",
+      "name": "Coca-Cola personal",
+      "category": "Bebidas",
+      "price": 3500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/coca-cola-personal.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-colombiana",
+      "name": "Colombiana",
+      "category": "Bebidas",
+      "price": 5000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/colombiana.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-cuatro-3-litros",
+      "name": "Cuatro 3 litros",
+      "category": "Bebidas",
+      "price": 12000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/cuatro-3-litros.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-gatorade",
+      "name": "Gatorade",
+      "category": "Bebidas",
+      "price": 4500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/gatorade.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-pony-mini",
+      "name": "Pony Mini",
+      "category": "Bebidas",
+      "price": 2300,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/pony-mini.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-pony-personal",
+      "name": "Pony personal",
+      "category": "Bebidas",
+      "price": 3500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/pony-personal.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-postobon-manzana",
+      "name": "Postobón manzana",
+      "category": "Bebidas",
+      "price": 5000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/postobon-manzana.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-tangelo",
+      "name": "Tangelo",
+      "category": "Bebidas",
+      "price": 1500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/tangelo.webp",
+      "inStock": true
+    },
+    {
+      "id": "bebidas-tangelo-de-bolsita",
+      "name": "Tangelo de bolsita",
+      "category": "Bebidas",
+      "price": 1600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/bebidas/tangelo-de-bolsita.webp",
+      "inStock": true
+    },
+    {
+      "id": "mecatos-cheese-tris",
+      "name": "Cheese Tris",
+      "category": "Mecatos",
+      "price": 2300,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mecatos/cheese-tris.webp",
+      "inStock": true
+    },
+    {
+      "id": "mecatos-chicharron-el-canario",
+      "name": "Chicharrón El Canario",
+      "category": "Mecatos",
+      "price": 2300,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mecatos/chicharron-el-canario.webp",
+      "inStock": true
+    },
+    {
+      "id": "mecatos-choclitos",
+      "name": "Choclitos",
+      "category": "Mecatos",
+      "price": 2300,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mecatos/choclitos.webp",
+      "inStock": true
+    },
+    {
+      "id": "mecatos-croc-and-nachos",
+      "name": "Croc-And Nachos",
+      "category": "Mecatos",
+      "price": 1200,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mecatos/croc-and-nachos.webp",
+      "inStock": true
+    },
+    {
+      "id": "mecatos-delipapitas-limon-pollo-y-mayonesa",
+      "name": "Delipapitas Limón, Pollo y Mayonesa",
+      "category": "Mecatos",
+      "price": 1200,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mecatos/delipapitas-limon-pollo-y-mayonesa.webp",
+      "inStock": true
+    },
+    {
+      "id": "mecatos-detoditos-bbq",
+      "name": "DeToditos BBQ",
+      "category": "Mecatos",
+      "price": 3000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mecatos/detoditos-bbq.webp",
+      "inStock": true
+    },
+    {
+      "id": "mecatos-detoditos-chimichurri-argentino",
+      "name": "DeToditos Chimichurri Argentino",
+      "category": "Mecatos",
+      "price": 3000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mecatos/detoditos-chimichurri-argentino.webp",
+      "inStock": true
+    },
+    {
+      "id": "mecatos-detoditos-mix",
+      "name": "DeToditos MIX",
+      "category": "Mecatos",
+      "price": 3000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mecatos/detoditos-mix.webp",
+      "inStock": true
+    },
+    {
+      "id": "mecatos-margaritas-de-limon-y-pollo",
+      "name": "Margaritas de limón y pollo",
+      "category": "Mecatos",
+      "price": 2600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mecatos/margaritas-de-limon-y-pollo.webp",
+      "inStock": true
+    },
+    {
+      "id": "mecatos-margaritas-de-limon-y-pollo-grandes",
+      "name": "Margaritas de limón y pollo grandes",
+      "category": "Mecatos",
+      "price": 8000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mecatos/margaritas-de-limon-y-pollo-grandes.webp",
+      "inStock": true
+    },
+    {
+      "id": "mecatos-picadas-el-canario",
+      "name": "Picadas El Canario",
+      "category": "Mecatos",
+      "price": 1600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mecatos/picadas-el-canario.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-aceite-grande",
+      "name": "Aceite Grande",
+      "category": "Mercado",
+      "price": 9000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/aceite-grande.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-aceite-mediano",
+      "name": "Aceite Mediano",
+      "category": "Mercado",
+      "price": 5200,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/aceite-mediano.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-aceite-pequeno",
+      "name": "Aceite Pequeño",
+      "category": "Mercado",
+      "price": 2000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/aceite-pequeno.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-aji",
+      "name": "Ají",
+      "category": "Mercado",
+      "price": 500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/aji.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-aromatica-de-manzanilla",
+      "name": "Aromática de manzanilla",
+      "category": "Mercado",
+      "price": 300,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/aromatica-de-manzanilla.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-arroz-roa",
+      "name": "Arroz Roa",
+      "category": "Mercado",
+      "price": 2400,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/arroz-roa.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-azucar",
+      "name": "Azúcar",
+      "category": "Mercado",
+      "price": 2600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/azucar.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-bandeja",
+      "name": "Bandeja",
+      "category": "Mercado",
+      "price": 12000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/bandeja.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-bicarbonato-de-soda",
+      "name": "Bicarbonato de Soda",
+      "category": "Mercado",
+      "price": 800,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/bicarbonato-de-soda.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-bombilla-led",
+      "name": "Bombilla LED",
+      "category": "Mercado",
+      "price": 5500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/bombilla-led.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-caja-de-fosforos",
+      "name": "Caja de fósforos",
+      "category": "Mercado",
+      "price": 600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/caja-de-fosforos.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-caldo-de-gallina-desmenuzado",
+      "name": "Caldo de Gallina Desmenuzado",
+      "category": "Mercado",
+      "price": 600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/caldo-de-gallina-desmenuzado.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-cebolla-cabezona",
+      "name": "Cebolla Cabezona",
+      "category": "Mercado",
+      "price": 2000,
+      "unit": "la libra",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/cebolla-cabezona.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-cebolla-larga",
+      "name": "Cebolla Larga",
+      "category": "Mercado",
+      "price": 900,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/cebolla-larga.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-choco-krispis",
+      "name": "Choco Krispis",
+      "category": "Mercado",
+      "price": 1600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/choco-krispis.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-chocolisto",
+      "name": "Chocolisto",
+      "category": "Mercado",
+      "price": 900,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/chocolisto.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-clavos-de-olor",
+      "name": "Clavos de olor",
+      "category": "Mercado",
+      "price": 700,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/clavos-de-olor.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-colorey-color",
+      "name": "Colorey color",
+      "category": "Mercado",
+      "price": 800,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/colorey-color.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-crema-de-leche",
+      "name": "Crema de Leche",
+      "category": "Mercado",
+      "price": 2900,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/crema-de-leche.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-crispetas",
+      "name": "Crispetas",
+      "category": "Mercado",
+      "price": 2000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/crispetas.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-cuarto-de-cafe",
+      "name": "Cuarto de café",
+      "category": "Mercado",
+      "price": 7800,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/cuarto-de-cafe.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-encendedores",
+      "name": "Encendedores",
+      "category": "Mercado",
+      "price": 1000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/encendedores.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-galletas-saltinas",
+      "name": "Galletas Saltinas",
+      "category": "Mercado",
+      "price": 2000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/galletas-saltinas.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-galletas-saltinas-dore",
+      "name": "Galletas Saltinas Doré",
+      "category": "Mercado",
+      "price": 3500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/galletas-saltinas-dore.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-galletas-saltinas-mantequilla",
+      "name": "Galletas Saltinas Mantequilla",
+      "category": "Mercado",
+      "price": 2900,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/galletas-saltinas-mantequilla.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-guisamac",
+      "name": "Guisamac",
+      "category": "Mercado",
+      "price": 1100,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/guisamac.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-harina-de-trigo",
+      "name": "Harina de trigo",
+      "category": "Mercado",
+      "price": 2000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/harina-de-trigo.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-harina-pan",
+      "name": "Harina PAN",
+      "category": "Mercado",
+      "price": 2900,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/harina-pan.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-huevos",
+      "name": "Huevos",
+      "category": "Mercado",
+      "price": 600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/huevos.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-leche-deslactosada",
+      "name": "Leche Deslactosada",
+      "category": "Mercado",
+      "price": 6000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/leche-deslactosada.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-leche-klim",
+      "name": "Leche Klim",
+      "category": "Mercado",
+      "price": 1600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/leche-klim.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-leche-litro",
+      "name": "Leche Litro",
+      "category": "Mercado",
+      "price": 6000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/leche-litro.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-leche-mediana",
+      "name": "Leche Mediana",
+      "category": "Mercado",
+      "price": 2600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/leche-mediana.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-leche-pequena",
+      "name": "Leche Pequeña",
+      "category": "Mercado",
+      "price": 1600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/leche-pequena.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-lechera",
+      "name": "Lechera",
+      "category": "Mercado",
+      "price": 1200,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/lechera.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-lentejas",
+      "name": "Lentejas",
+      "category": "Mercado",
+      "price": 3000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/lentejas.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-maggi-dona-gallina",
+      "name": "Maggi Doña Gallina",
+      "category": "Mercado",
+      "price": 600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/maggi-dona-gallina.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-mantequilla",
+      "name": "Mantequilla",
+      "category": "Mercado",
+      "price": 2800,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/mantequilla.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-miel",
+      "name": "Miel",
+      "category": "Mercado",
+      "price": 900,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/miel.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-milo",
+      "name": "Milo",
+      "category": "Mercado",
+      "price": 1100,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/milo.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-nescafe-dolca",
+      "name": "Nescafé Dolca",
+      "category": "Mercado",
+      "price": 1800,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/nescafe-dolca.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-panal-de-huevos",
+      "name": "Panal de Huevos",
+      "category": "Mercado",
+      "price": 14500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/panal-de-huevos.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-panela-pequena",
+      "name": "Panela Pequeña",
+      "category": "Mercado",
+      "price": 1100,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/panela-pequena.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-panelada",
+      "name": "Panelada",
+      "category": "Mercado",
+      "price": 1600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/panelada.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-papa-parda",
+      "name": "Papa Parda",
+      "category": "Mercado",
+      "price": 1500,
+      "unit": "la libra",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/papa-parda.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-papel-familia",
+      "name": "Papel Familia",
+      "category": "Mercado",
+      "price": 2600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/papel-familia.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-papeleta-de-cafe",
+      "name": "Papeleta de café",
+      "category": "Mercado",
+      "price": 2900,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/papeleta-de-cafe.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-pasta-de-chocolate-luker",
+      "name": "Pasta de Chocolate Luker",
+      "category": "Mercado",
+      "price": 1300,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/pasta-de-chocolate-luker.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-pilas-doble-a",
+      "name": "Pilas Doble A",
+      "category": "Mercado",
+      "price": 2200,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/pilas-doble-a.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-pilas-triple-a",
+      "name": "Pilas Triple A",
+      "category": "Mercado",
+      "price": 2200,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/pilas-triple-a.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-recortes-de-pollo",
+      "name": "Recortes de Pollo",
+      "category": "Mercado",
+      "price": 5000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/recortes-de-pollo.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-ricostilla-cubo",
+      "name": "Ricostilla Cubo",
+      "category": "Mercado",
+      "price": 600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/ricostilla-cubo.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-ricostilla-en-sobre",
+      "name": "Ricostilla en Sobre",
+      "category": "Mercado",
+      "price": 600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/ricostilla-en-sobre.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-sal",
+      "name": "Sal",
+      "category": "Mercado",
+      "price": 1600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/sal.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-salsa-bbq",
+      "name": "Salsa BBQ",
+      "category": "Mercado",
+      "price": 1700,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/salsa-bbq.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-salsa-de-tomate",
+      "name": "Salsa de Tomate",
+      "category": "Mercado",
+      "price": 1600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/salsa-de-tomate.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-salsa-mayonesa",
+      "name": "Salsa Mayonesa",
+      "category": "Mercado",
+      "price": 1600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/salsa-mayonesa.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-salsa-rosada",
+      "name": "Salsa Rosada",
+      "category": "Mercado",
+      "price": 2800,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/salsa-rosada.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-servilletas-nova",
+      "name": "Servilletas Nova",
+      "category": "Mercado",
+      "price": 1600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/servilletas-nova.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-sobre-de-canela",
+      "name": "Sobre de Canela",
+      "category": "Mercado",
+      "price": 700,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/sobre-de-canela.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-suntea",
+      "name": "Suntea",
+      "category": "Mercado",
+      "price": 1600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/suntea.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-tomates",
+      "name": "Tomates",
+      "category": "Mercado",
+      "price": 1700,
+      "unit": "la libra",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/tomates.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-tostados",
+      "name": "Tostados",
+      "category": "Mercado",
+      "price": 2000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/tostados.webp",
+      "inStock": true
+    },
+    {
+      "id": "mercado-zucaritas",
+      "name": "Zucaritas",
+      "category": "Mercado",
+      "price": 1600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/mercado/zucaritas.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-ariel-libra",
+      "name": "Ariel libra",
+      "category": "Productos y otros",
+      "price": 6300,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/ariel-libra.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-ariel-mediano",
+      "name": "Ariel mediano",
+      "category": "Productos y otros",
+      "price": 3600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/ariel-mediano.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-ariel-pequeno",
+      "name": "Ariel pequeño",
+      "category": "Productos y otros",
+      "price": 2000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/ariel-pequeno.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-brilla-king",
+      "name": "Brilla King",
+      "category": "Productos y otros",
+      "price": 3500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/brilla-king.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-cepillos-colgate",
+      "name": "Cepillos Colgate",
+      "category": "Productos y otros",
+      "price": 3300,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/cepillos-colgate.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-colgate-triple-accion-grande",
+      "name": "Colgate Triple Acción Grande",
+      "category": "Productos y otros",
+      "price": 4600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/colgate-triple-accion-grande.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-colgate-triple-accion-pequeno",
+      "name": "Colgate Triple Acción Pequeño",
+      "category": "Productos y otros",
+      "price": 2500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/colgate-triple-accion-pequeno.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-desodorante-balance",
+      "name": "Desodorante Balance",
+      "category": "Productos y otros",
+      "price": 1000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/desodorante-balance.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-desodorante-lady-speed-stick",
+      "name": "Desodorante Lady Speed Stick",
+      "category": "Productos y otros",
+      "price": 1400,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/desodorante-lady-speed-stick.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-desodorante-speed-stick",
+      "name": "Desodorante Speed Stick",
+      "category": "Productos y otros",
+      "price": 1400,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/desodorante-speed-stick.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-disco-de-axion",
+      "name": "Disco de axion",
+      "category": "Productos y otros",
+      "price": 1700,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/disco-de-axion.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-esponja-multiusos",
+      "name": "Esponja Multiusos",
+      "category": "Productos y otros",
+      "price": 1000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/esponja-multiusos.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-esponja-sabra",
+      "name": "Esponja sabra",
+      "category": "Productos y otros",
+      "price": 700,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/esponja-sabra.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-esponjilla-de-acero-inoxidable",
+      "name": "Esponjilla de acero inoxidable",
+      "category": "Productos y otros",
+      "price": 900,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/esponjilla-de-acero-inoxidable.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-fab-libra",
+      "name": "Fab libra",
+      "category": "Productos y otros",
+      "price": 6400,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/fab-libra.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-fab-mediano",
+      "name": "Fab mediano",
+      "category": "Productos y otros",
+      "price": 3600,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/fab-mediano.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-fab-pequeno",
+      "name": "Fab Pequeño",
+      "category": "Productos y otros",
+      "price": 2000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/fab-pequeno.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-fabuloso",
+      "name": "Fabuloso",
+      "category": "Productos y otros",
+      "price": 2500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/fabuloso.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-head-and-shoulders-limpieza-renovadora",
+      "name": "Head and Shoulders limpieza renovadora",
+      "category": "Productos y otros",
+      "price": 1100,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/head-and-shoulders-limpieza-renovadora.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-jabon-antibacterial",
+      "name": "Jabón Antibacterial",
+      "category": "Productos y otros",
+      "price": 5500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/jabon-antibacterial.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-jabon-coco",
+      "name": "Jabón Coco",
+      "category": "Productos y otros",
+      "price": 2800,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/jabon-coco.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-jabon-johnson",
+      "name": "Jabón Johnson",
+      "category": "Productos y otros",
+      "price": 3700,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/jabon-johnson.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-jabon-palmolive",
+      "name": "Jabón Palmolive",
+      "category": "Productos y otros",
+      "price": 3700,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/jabon-palmolive.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-jabon-protex",
+      "name": "Jabón Protex",
+      "category": "Productos y otros",
+      "price": 3700,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/jabon-protex.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-jabon-rey",
+      "name": "Jabón Rey",
+      "category": "Productos y otros",
+      "price": 4300,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/jabon-rey.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-maquina-de-afeitar-xtreme-3",
+      "name": "Máquina de Afeitar Xtreme 3",
+      "category": "Productos y otros",
+      "price": 3500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/maquina-de-afeitar-xtreme-3.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-maquina-gillette-prestobarba-ultragrip-2",
+      "name": "Máquina Gillette Prestobarba Ultragrip 2",
+      "category": "Productos y otros",
+      "price": 2500,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/maquina-gillette-prestobarba-ultragrip-2.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-maquina-prestobarba-dorco",
+      "name": "Máquina Prestobarba Dorco",
+      "category": "Productos y otros",
+      "price": 1000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/maquina-prestobarba-dorco.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-mega-super-riel",
+      "name": "Mega Super Riel",
+      "category": "Productos y otros",
+      "price": 4300,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/mega-super-riel.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-panales-winny-etapa-5",
+      "name": "Pañales Winny Etapa 5",
+      "category": "Productos y otros",
+      "price": 2000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/panales-winny-etapa-5.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-paquetes-de-sobre-savital-shampoo-acondicionador-y-crema-para-peinar",
+      "name": "Paquetes de sobre Savital, shampoo, acondicionador y crema para peinar",
+      "category": "Productos y otros",
+      "price": 1100,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/paquetes-de-sobre-savital-shampoo-acondicionador-y-crema-para-peinar.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-proteccion-nosotras",
+      "name": "Protección Nosotras",
+      "category": "Productos y otros",
+      "price": 200,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/proteccion-nosotras.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-rollo-de-esponjilla-metalica",
+      "name": "Rollo de esponjilla metálica",
+      "category": "Productos y otros",
+      "price": 400,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/rollo-de-esponjilla-metalica.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-sabras",
+      "name": "Sabras",
+      "category": "Productos y otros",
+      "price": 400,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/sabras.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-sobre-de-polvo-vanish",
+      "name": "Sobre de polvo Vanish",
+      "category": "Productos y otros",
+      "price": 2000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/sobre-de-polvo-vanish.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-sobre-de-suavitel",
+      "name": "Sobre de Suavitel",
+      "category": "Productos y otros",
+      "price": 1100,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/sobre-de-suavitel.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-super-glue",
+      "name": "Super Glue",
+      "category": "Productos y otros",
+      "price": 1000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/super-glue.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-toallas-nosotras",
+      "name": "Toallas Nosotras",
+      "category": "Productos y otros",
+      "price": 700,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/toallas-nosotras.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-toallitas-humedas-koala",
+      "name": "Toallitas húmedas Koala",
+      "category": "Productos y otros",
+      "price": 6800,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/toallitas-humedas-koala.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-toallitas-humedas-luvilo-todo-tipo-de-usos",
+      "name": "Toallitas húmedas Luvilo todo tipo de usos",
+      "category": "Productos y otros",
+      "price": 6000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/toallitas-humedas-luvilo-todo-tipo-de-usos.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-vr-ambientador-aroma-lavanda",
+      "name": "VR Ambientador Aroma Lavanda",
+      "category": "Productos y otros",
+      "price": 6000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/vr-ambientador-aroma-lavanda.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-vr-detergente-azul-aroma-floral",
+      "name": "VR Detergente Azul Aroma Floral",
+      "category": "Productos y otros",
+      "price": 6000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/vr-detergente-azul-aroma-floral.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-vr-detergente-blanco-aroma-floral",
+      "name": "VR Detergente Blanco Aroma Floral",
+      "category": "Productos y otros",
+      "price": 6000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/vr-detergente-blanco-aroma-floral.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-vr-detergente-blanco-aroma-primavera",
+      "name": "VR Detergente Blanco Aroma Primavera",
+      "category": "Productos y otros",
+      "price": 6000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/vr-detergente-blanco-aroma-primavera.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-vr-detergente-grande-aroma-floral",
+      "name": "VR Detergente Grande Aroma Floral",
+      "category": "Productos y otros",
+      "price": 15000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/vr-detergente-grande-aroma-floral.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-vr-detergente-negro-aroma-floral",
+      "name": "VR Detergente Negro Aroma Floral",
+      "category": "Productos y otros",
+      "price": 6000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/vr-detergente-negro-aroma-floral.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-vr-suavitel-celeste-aroma-floral",
+      "name": "VR Suavitel celeste Aroma Floral",
+      "category": "Productos y otros",
+      "price": 6000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/vr-suavitel-celeste-aroma-floral.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-vr-suavitel-grande-aroma-primavera",
+      "name": "VR Suavitel Grande Aroma Primavera",
+      "category": "Productos y otros",
+      "price": 15000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/vr-suavitel-grande-aroma-primavera.webp",
+      "inStock": true
+    },
+    {
+      "id": "productos-y-otros-vr-suavitel-verde-aroma-floral",
+      "name": "VR Suavitel Verde Aroma Floral",
+      "category": "Productos y otros",
+      "price": 6000,
+      "unit": "",
+      "currency": "COP",
+      "image": "https://ana-tienda-1976e.web.app/productos/productos-y-otros/vr-suavitel-verde-aroma-floral.webp",
+      "inStock": true
+    }
+  ]
+}

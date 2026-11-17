@@ -1,0 +1,80 @@
+{
+  "name": "Adargeyi Store Assistant",
+  "version": "1.0.0",
+  "description": "Herramientas públicas de consulta de catálogo, información comercial y opciones de entrega de Adargeyi en Cali.",
+  "endpoint": "https://ana-tienda-1976e.web.app",
+  "tools": [
+    {
+      "name": "buscarProductos",
+      "description": "Busca productos en el catálogo de Adargeyi por nombre o categoría.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "termino": {
+            "type": "string",
+            "description": "Palabra clave a buscar (ej. arroz, leche, gaseosa)"
+          },
+          "categoria": {
+            "type": "string",
+            "description": "Categoría opcional (Bebidas, Mecatos, Mercado, Productos y otros)"
+          }
+        },
+        "required": ["termino"]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "total": { "type": "number" },
+          "productos": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "nombre": { "type": "string" },
+                "precio": { "type": "number" },
+                "categoria": { "type": "string" },
+                "unidad": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "obtenerInfoTienda",
+      "description": "Obtiene los datos comerciales, horarios y ubicación de la tienda física Adargeyi.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "nombre": { "type": "string" },
+          "direccion": { "type": "string" },
+          "ciudad": { "type": "string" },
+          "horario": { "type": "string" },
+          "googleMaps": { "type": "string" }
+        }
+      }
+    },
+    {
+      "name": "consultarOpcionesEntrega",
+      "description": "Consulta las modalidades de entrega disponibles (domicilio local o recogida en tienda).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "modalidades": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "zonaCobertura": { "type": "string" }
+        }
+      }
+    }
+  ]
+}

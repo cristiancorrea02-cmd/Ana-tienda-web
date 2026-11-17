@@ -1,0 +1,16 @@
+node_modules
+dist
+.env*
+!.env.example
+.firebase
+*.log
+.DS_Store
+
+# Credenciales privadas de Firebase Admin: nunca se suben al repositorio.
+serviceAccountKey.json
+backend/serviceAccountKey.json
+*firebase-adminsdk*.json
+
+# Fotos originales pesadas (las versiones livianas están en frontend/public/productos)
+imagenes-originales/
+backend/imagenes-originales/
