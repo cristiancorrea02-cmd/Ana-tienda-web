@@ -1,5 +1,4 @@
 import { montarCatalogo } from './catalogo.js';
-import { iniciarBotonAcceso } from './auth/boton-acceso.js';
 
 const filtros = document.getElementById('filtros-categorias');
 const lista = document.getElementById('lista-productos');
@@ -35,5 +34,4 @@ async function cargarCatalogo() {
   }
 }
 
-iniciarBotonAcceso();
 cargarCatalogo();

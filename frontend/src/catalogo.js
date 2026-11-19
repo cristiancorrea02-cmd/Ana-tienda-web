@@ -490,22 +490,92 @@ function configurarCarrito(productos) {
   }
 
   function enviarPorWhatsApp() {
-    if (!ultimoPedidoCreado) return;
+    let numeroComercial = String(import.meta.env.VITE_WHATSAPP_NUMBER || '573016445177').replace(/\D/g, '');
+    if (numeroComercial.length === 10 && numeroComercial.startsWith('3')) {
+      numeroComercial = '57' + numeroComercial;
+    }
+    if (!numeroComercial) {
+      numeroComercial = '573016445177';
+    }
 
-    const numeroComercial = String(import.meta.env.VITE_WHATSAPP_NUMBER || '573000000000').replace(/\D/g, '');
-    const { id, clienteNombre, clienteTelefono, tipoEntrega, direccion, productos, total } = ultimoPedidoCreado;
+    let pedido = ultimoPedidoCreado;
+
+    if (!pedido) {
+      if (carrito.size === 0) {
+        if (statusPedido) {
+          statusPedido.textContent = 'Tu carrito está vacío. Agrega productos para ordenar por WhatsApp.';
+          statusPedido.className = 'text-xs text-center font-medium min-h-4 text-error';
+        }
+        return;
+      }
+
+      const nombre = (inputClienteNombre?.value || '').trim();
+      if (!nombre || nombre.length < 2) {
+        if (statusPedido) {
+          statusPedido.textContent = 'Por favor ingresa tu nombre para enviar el pedido por WhatsApp.';
+          statusPedido.className = 'text-xs text-center font-medium min-h-4 text-error';
+        }
+        inputClienteNombre?.focus();
+        return;
+      }
+
+      const telefono = (inputClienteTelefono?.value || '').trim();
+      if (!telefono || telefono.length < 7) {
+        if (statusPedido) {
+          statusPedido.textContent = 'Por favor ingresa un teléfono o WhatsApp de contacto válido.';
+          statusPedido.className = 'text-xs text-center font-medium min-h-4 text-error';
+        }
+        inputClienteTelefono?.focus();
+        return;
+      }
+
+      const tipoEntrega = obtenerTipoEntrega();
+      const direccion = (inputAddress?.value || '').trim();
+      if (tipoEntrega === 'domicilio' && (!direccion || direccion.length < 5)) {
+        if (statusPedido) {
+          statusPedido.textContent = 'Por favor ingresa la dirección completa de entrega en Cali.';
+          statusPedido.className = 'text-xs text-center font-medium min-h-4 text-error';
+        }
+        inputAddress?.focus();
+        return;
+      }
+
+      const productosPedido = [...carrito.values()].map((i) => ({
+        nombre: i.producto.nombre || 'Producto',
+        cantidad: i.cantidad,
+        precio: i.producto.precio || 0,
+      }));
+      const total = productosPedido.reduce((acc, p) => acc + p.precio * p.cantidad, 0);
+
+      pedido = {
+        id: null,
+        clienteNombre: nombre,
+        clienteTelefono: telefono,
+        tipoEntrega,
+        direccion,
+        productos: productosPedido,
+        total,
+      };
+
+      enviarPedido().catch(() => {});
+    }
+
+    const { id, clienteNombre, clienteTelefono, tipoEntrega, direccion, productos, total } = pedido;
 
     const lineasProductos = productos
       .map((p) => `• ${p.nombre} × ${p.cantidad} = ${formatoPrecio(p.precio * p.cantidad)} (${formatoPrecio(p.precio)} c/u)`)
       .join('\n');
 
     const entregaTexto = tipoEntrega === 'domicilio'
-      ? `🛵 Domicilio en Cali\n📍 Dirección: ${direccion}`
+      ? `🛵 Domicilio en Cali\n📍 Dirección: ${direccion || 'Por confirmar en el chat'}`
       : '🏬 Recogida en tienda (El Edén, Bella Suiza, Cali)';
 
+    const encabezado = id
+      ? `Acabo de registrar el siguiente pedido en la tienda web:\n\n📦 Pedido: #${id}\n`
+      : `Quiero realizar el siguiente pedido por el catálogo web:\n\n`;
+
     const mensaje = `¡Hola, Adargeyi! 👋\n` +
-      `Acabo de registrar el siguiente pedido en la tienda web:\n\n` +
-      `📦 Pedido: #${id}\n` +
+      encabezado +
       `👤 Cliente: ${clienteNombre}\n` +
       `📞 Contacto: ${clienteTelefono}\n` +
       `🛵 Entrega: ${entregaTexto}\n\n` +
@@ -514,7 +584,10 @@ function configurarCarrito(productos) {
       `Quedo atento(a) para coordinar la entrega. ¡Muchas gracias!`;
 
     const url = `https://wa.me/${numeroComercial}?text=${encodeURIComponent(mensaje)}`;
-    window.open(url, '_blank', 'noopener,noreferrer');
+    const popup = window.open(url, '_blank', 'noopener,noreferrer');
+    if (!popup || popup.closed || typeof popup.closed === 'undefined') {
+      window.location.href = url;
+    }
   }
 
   botonHacerPedido?.addEventListener('click', enviarPedido);
@@ -622,7 +695,7 @@ export function montarCatalogo({ filtros, lista, busqueda, productos }) {
         nombre: 'Adargeyi',
         direccion: 'Manzana A Casa 8 Parte Alta El Edén Sector, Bella Suiza, Cali, Valle del Cauca',
         horario: 'Todos los días de 7:00 AM a 10:00 PM',
-        telefono: '+573000000000',
+        telefono: '+573016445177',
         modalidades: ['Venta en tienda física', 'Domicilios en Cali'],
       }),
       consultarOpcionesEntrega: () => ({
